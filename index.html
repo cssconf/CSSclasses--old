@@ -3,19 +3,38 @@
   <meta charset="utf-8">
   <title>CSSclasses</title>
   <style>
+    * {
+  	  box-sizing: border-box;
+    }
     body {
-      font-size: 18px;
+      margin: 0;
+      padding: 0;
+      background-color: #376184;
+      color: @color_white;
+      font-family: 'Open Sans', sans-serif;
+      font-size: 16px;
+      line-height: 1.5;
     }
     .wrap {
-      max-width: 30em;
+      background-color: #FFF;
+      max-width: 40em;
       margin: 0 auto;
+      padding: 3em;
+    }
+    header, footer {
+      max-width: 40em;
+      margin: 2em auto;
+      text-align: center;
+      color: #FFF;
     }
   </style>
 </head>
 <body>
-  <div class="wrap">
+  <header>
     <h1>CSSclasses</h1>
     <p>CSSclasses is for beginners and experts alike: Using CSS as a simple and low-barrier entry language, we empower people to understand their browser and to learn how to experiment with code. Workshop and hackathon in one event. Everybody is encouraged to demo their progress at the end of the day.</p>
+  </header>
+  <div class="wrap">
     <p>
       Follow <a href="https://twitter.com/cssclasses">@CSSclasses</a> on Twitter
       <br>
@@ -93,6 +112,8 @@
       </li>
     </ul>
   </div>
-
+  <footer>
+    Organized by <a href="http://2014.cssconf.eu/">CSSconf EU</a> and <a href="http://www.opentechschool.org/">OpenTechSchool</a>
+  </footer>
 </body>
 </html>
