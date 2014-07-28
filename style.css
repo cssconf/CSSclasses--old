@@ -5,50 +5,62 @@ body {
   margin: 0;
   padding: 0;
   background-color: #376184;
-  color: @color_white;
+  color: #000;
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
   line-height: 1.5;
 }
-header {
-  padding: 0 1em;
-}
-@media screen and (min-width: 25em) {
-  header {
-    padding: 0 2em;
-  }
-}
-@media screen and (min-width: 42.5em) {
-  header {
-    padding: 0;
-  }
-}
-.wrap {
-  background-color: #FFF;
-  max-width: 40em;
-  margin: 0 auto;
-  padding: 1em;
-}
-@media screen and (min-width: 25em) {
-  .wrap {
-    padding: 2.5em;
-  }
-}
-header, footer {
+header, footer, .main-content {
   max-width: 40em;
   margin: 2em auto;
-  text-align: center;
-  color: #FFF;
 }
+header, footer {
+  color: #FFF;
+  text-align: center;
+  padding: 1em;
+}
+.main-content {
+  max-width: 60em;
+  padding: 1em;
+  background-color: #FFF;
+}
+
+
+// typography
 h2 {
   line-height: 1.3;
 }
-a {
-  color: #376184;
-}
-footer a {
+header a, footer a {
   color: #fff;
 }
 ul {
   padding-left: 20px;
+}
+
+// links
+a, a:link, a:visited {
+  color: inherit;
+  border-bottom: 2px solid;
+  text-decoration: none;
+}
+a:hover, a:focus {
+  opacity: .7;
+}
+
+
+@media screen and (min-width: 25em) {
+  header, footer {
+    padding: 2em 2em;
+  }
+  .main-content {
+    padding: 2em 2em;
+  }
+}
+@media screen and (min-width: 42.5em) {
+  header, footer {
+    padding: 2em 3em;
+  }
+  .main-content {
+    padding: 2em 3em;
+  }
 }
