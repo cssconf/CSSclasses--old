@@ -4,52 +4,59 @@
   <title>CSSclasses</title>
   <style>
     * {
-  	  box-sizing: border-box;
+      box-sizing: border-box;
+    }
+    a {
+      color: inherit;
+      border-bottom: 2px solid;
+      text-decoration: none;
+    }
+    a:hover, a:focus {
+      opacity: .7;
     }
     body {
       margin: 0;
       padding: 0;
       background-color: #376184;
-      color: @color_white;
+      color: #000;
       font-family: 'Open Sans', sans-serif;
       font-size: 16px;
       line-height: 1.5;
     }
-    .wrap {
-      background-color: #FFF;
-      max-width: 40em;
-      margin: 0 auto;
-      padding: 3em;
-    }
-    header, footer {
+    header, footer, .main-content {
       max-width: 40em;
       margin: 2em auto;
-      text-align: center;
+    }
+    header, footer {
       color: #FFF;
+      text-align: center;
+      padding: 1em;
+    }
+    .main-content {
+      max-width: 60em;
+      padding: 3em;
+      background-color: #FFF;
     }
   </style>
 </head>
 <body>
   <header>
     <h1>CSSclasses</h1>
-    <p>CSSclasses is for beginners and experts alike: Using CSS as a simple and low-barrier entry language, we empower people to understand their browser and to learn how to experiment with code. Workshop and hackathon in one event. Everybody is encouraged to demo their progress at the end of the day.</p>
+    <p>
+      by <a href="http://2014.cssconf.eu/">CSSconf EU</a> and <a href="http://www.opentechschool.org/">OpenTechSchool</a>
+    </p>
+    <p>CSSclasses is for beginners and experts alike: Using CSS as a simple and low-barrier entry language, we empower people to understand their browser and to learn how to experiment with code. Workshop and hackathon in one event.</p>
   </header>
-  <div class="wrap">
-    <p>
-      Follow <a href="https://twitter.com/cssclasses">@CSSclasses</a> on Twitter
-      <br>
-      Fork on <a href="https://github.com/cssconf/cssclasses">github</a>
-    </p>
-    <p>
-      organized by <a href="http://2014.cssconf.eu/">CSSconf EU</a> and <a href="http://www.opentechschool.org/">OpenTechSchool</a>
-    </p>
 
-    <p>First event: Sunday, August 17, 10:30am at <a href="http://co-up.de/">co.up</a></p>
-
-    <h2>Workshop attendees need to bring and prepare</h2>
-    <p>
+  <div class="main-content">
+    <h2>Next Events</h2>
+    <article>
+      <p>Sunday, August 17, 10:30am at <a href="http://co-up.de/">co.up</a></p>
+    </article>
+  
+    <h2>
       Resources for Coaches
-    </p>    
+    </h2>
     <ul>
         <li>
           <a href="http://opentechschool.github.io/slides/presentations/coaching/">Coaches Guide from OTS</a>
@@ -114,6 +121,10 @@
   </div>
   <footer>
     Organized by <a href="http://2014.cssconf.eu/">CSSconf EU</a> and <a href="http://www.opentechschool.org/">OpenTechSchool</a>
+    <br>
+    <br>
+    Fork on <a href="https://github.com/cssconf/cssclasses">Github</a> | Follow <a href="https://twitter.com/cssclasses">@CSSclasses</a> on Twitter
+
   </footer>
 </body>
 </html>
