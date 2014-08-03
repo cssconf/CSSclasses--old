@@ -62,6 +62,45 @@ a:hover, a:focus {
   }
 }
 
+// Commented code blocks, need proper styling
+.sidebyside {
+  display: block;
+  position: relative;
+  &:before {
+    content: ' ';
+    position: absolute;
+    left: 50%;
+    height: 100%;
+    width: 50%;
+    background-color: #f0f0f0;
+    display: block;
+    z-index: 0;
+  }
+  .description {
+    width: 50%;
+    display: inline-block;
+    padding: 5px;
+    vertical-align: top;
+    position: relative;
+    -ms-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+  }
+  .highlight {
+    width: 49%;
+    display: inline-block;
+    padding: 5px;
+    vertical-align: top;
+    height: 100%;
+    z-index: 1;
+    position: relative;
+  }
+  .highlight pre {
+    margin: 0;
+  }
+}
 
 @media screen and (min-width: 25em) {
   header, footer {
