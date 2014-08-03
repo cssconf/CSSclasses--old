@@ -1,0 +1,22 @@
+<header>
+
+    <h1>CSSclasses</h1>
+    <p>
+      by <a href="http://2014.cssconf.eu/">CSSconf EU</a> and <a href="http://www.opentechschool.org/">OpenTechSchool</a>
+    </p>
+    <p>CSSclasses is for beginners and experts alike: Using CSS as a simple and low-barrier entry language, we empower people to understand their browser and to learn how to experiment with code. Workshop and hackathon in one event.</p>
+  <div class="wrap">
+
+    <a class="site-title" href="{{ site.baseurl }}/">{{ site.title }}</a>
+
+    <nav class="site-nav">
+      {% for page in site.pages %}
+        {% if page.title %}
+          <a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
+        {% endif %}
+      {% endfor %}
+    </nav>
+
+  </div>
+
+</header>

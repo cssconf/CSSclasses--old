@@ -1,25 +1,19 @@
-<!doctype HTML>
+<!DOCTYPE html>
 <html>
-<head>
-    <meta charset="utf-8">
-    <title>CSSClasses</title>
-    <meta name="description" content="">
-    <!-- Place favicon.ico and apple-touch-icon(s) in the root directory -->
-    <link rel="stylesheet" href="../style.css" />
-</head>
-<body>
-<header>
-    <h1>CSSclasses</h1>
-    <h2>CSSClasses Workshop Materials</h2>
-    <strong>WORK IN PROGRESS, IMAGINE ONE OF THOSE NICE UNDER CONSTRUCTION GIFS HERE, FEEL FREE TO FILL THE GAPS</strong>
 
-    <p>We’ll start where needed, first steps can be skipped when everyone has prior experience. Let's break this down into several files whenever needed.</p>
-</header>
-<div class="wrap">
-    {{ content }}
-</div>
-<footer>
-    Organized by <a href="http://2014.cssconf.eu/">CSSconf EU</a> and <a href="http://www.opentechschool.org/">OpenTechSchool</a>
-</footer>
-</body>
+  {% include head.html %}
+
+    <body>
+
+    {% include header.html %}
+
+    <div class="main-content">
+
+      {{ content }}
+
+    </div>
+
+    {% include footer.html %}
+
+    </body>
 </html>
