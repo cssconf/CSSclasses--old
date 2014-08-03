@@ -66,3 +66,94 @@ a img {
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
   display: block;
 }
+
+/* line 10, ../_sass/screen.scss */
+* {
+  box-sizing: border-box;
+}
+
+/* line 13, ../_sass/screen.scss */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #376184;
+  color: #000;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+/* line 22, ../_sass/screen.scss */
+header, footer, .main-content {
+  max-width: 40em;
+  margin: 2em auto;
+}
+
+/* line 26, ../_sass/screen.scss */
+header, footer {
+  color: #FFF;
+  text-align: center;
+  padding: 1em;
+}
+
+/* line 31, ../_sass/screen.scss */
+.main-content {
+  max-width: 60em;
+  padding: 1em;
+  background-color: #FFF;
+}
+
+/* line 39, ../_sass/screen.scss */
+h2 {
+  line-height: 1.3;
+}
+
+/* line 42, ../_sass/screen.scss */
+header a, footer a {
+  color: #fff;
+}
+
+/* line 45, ../_sass/screen.scss */
+ul {
+  padding-left: 20px;
+}
+
+/* line 50, ../_sass/screen.scss */
+a, a:link, a:visited {
+  color: inherit;
+  border-bottom: 2px solid;
+  text-decoration: none;
+}
+
+/* line 55, ../_sass/screen.scss */
+a:hover, a:focus {
+  opacity: .7;
+}
+
+/* line 60, ../_sass/screen.scss */
+.icon svg {
+  width: 28px;
+}
+
+@media screen and (min-width: 25em) {
+  /* line 67, ../_sass/screen.scss */
+  header, footer {
+    padding: 2em 2em;
+  }
+
+  /* line 70, ../_sass/screen.scss */
+  .main-content {
+    padding: 2em 2em;
+  }
+}
+@media screen and (min-width: 42.5em) {
+  /* line 75, ../_sass/screen.scss */
+  header, footer {
+    padding: 2em 3em;
+  }
+
+  /* line 78, ../_sass/screen.scss */
+  .main-content {
+    padding: 2em 3em;
+  }
+}
