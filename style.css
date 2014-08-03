@@ -52,3 +52,37 @@ footer a {
 ul {
   padding-left: 20px;
 }
+
+.sidebyside {
+  display: block;
+  position: relative;
+}
+.sidebyside:before {
+  content: ' ';
+  position: absolute;
+  left: 50%;
+  height: 100%;
+  width: 50%;
+  background-color: #f0f0f0;
+  display: block;
+  z-index: 0;
+}
+.sidebyside .description {
+  width: 50%;
+  display: inline-block;
+  padding: 5px;
+  vertical-align: top;
+  position: relative;
+}
+.sidebyside .highlight {
+  width: 49%;
+  display: inline-block;
+  padding: 5px;
+  vertical-align: top;
+  height: 100%;
+  z-index: 1;
+  position: relative;
+}
+.sidebyside .highlight pre {
+  margin: 0;
+}
