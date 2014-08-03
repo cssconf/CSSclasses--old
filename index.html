@@ -2,19 +2,75 @@
 layout: default
 ---
 
-<div class="home">
+  <div class="main-content">
+    <h2>Next Events</h2>
+    <article>
+      <p>Sunday, August 17, 10:30am at <a href="http://co-up.de/">co.up</a></p>
+    </article>
+  
+    <h2>
+      Resources for Coaches
+    </h2>
 
-  <h1>Posts</h1>
+    <ul>
+        <li>
+          <a href="http://opentechschool.github.io/slides/presentations/coaching/">Coaches Guide from OTS</a>
+        </li>
+    </ul>
 
-  <ul class="posts">
-    {% for post in site.posts %}
+    <h2>Workshop attendees need to bring and prepare</h2>
+    <ul>
       <li>
-        <span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span>
-        <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+        Notebook (if you don’t have one and can’t borrow one, let us know)
       </li>
-    {% endfor %}
-  </ul>
+      <li>
+        Browser
+      </li>
+      <li>
+        Text Editor (Sublime?)
+      </li>
+    </ul>
 
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
-</div>
+    <h2>Workshop Materials</h2>
+    <p>
+      We’ll start where needed, first steps can be skipped when everyone has prior experience
+    </p>
+    <ul>
+      <li>What is a browser</li>
+      <li>How to create a file called index.html</li>
+      <li>How to open it in the browser</li>
+      <li>Edit, Save and refresh workflow</li>
+      <li>
+        <h3>Basic HTML</h3>
+        <ul>
+          <li>HTML boilerplate (as simple as possible)</li>
+          <li>block and inline (h1, p, div, span)</li>
+          <li>images</li>
+          <li>links</li>
+        </ul>
+      </li>
+      <li>
+        <h3>CSS</h3>
+        <ul>
+          <li>CSS - What is that?</li>
+          <li>Explain basic CSS syntax</li>
+          <li>Start with inline styles (Move on to linking external CSS files when learners get frustrated with repetition)</li>
+          <li>color</li>
+          <li>background-color</li>
+          <li>font-size</li>
+          <li>border</li>
+          <li>width, height, display</li>
+          <li>…</li>
+        </ul>
+      </li>
+      <li>
+        <h3>Resources for self-learning and expert groups</h3>
+        <ul>
+          <li>CSS spec</li>
+          <li>good beginner tutorials</li>
+          <li>HTML boilerplate</li>
+          <li>…</li>
+        </ul>
+      </li>
+    </ul>
+  </div>
