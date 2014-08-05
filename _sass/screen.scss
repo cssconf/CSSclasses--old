@@ -28,10 +28,12 @@ a, a:visited {
 a:hover, a:focus {
   opacity: .7;
 }
-.site-header a, .site-footer a, .site-nav a {
-  color: #fff;
+.site-header, .site-footer, .site-nav {
+  a {
+    color: #fff;
+    border-bottom: 0; 
+  }
 }
-
 
 .site-header, .site-footer, .main-content {
   max-width: 40em;
