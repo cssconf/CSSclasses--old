@@ -516,3 +516,6 @@ a:hover, a:focus {
 
   .main-content {
     padding: 2em 3em; } }
+.list-wo-bullets {
+  padding: 0;
+  list-style: none; }
