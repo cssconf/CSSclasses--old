@@ -13,37 +13,22 @@
 body {
   margin: 0;
   padding: 0;
-  background-color: #376184;
+  background-color: $color_blue;
   color: #000;
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
   line-height: 1.5;
 }
-header, footer, .main-content {
-  max-width: 40em;
-  margin: 2em auto;
-}
-header, footer {
-  color: #FFF;
-  text-align: center;
-  padding: 1em;
-}
-.main-content {
-  max-width: 60em;
-  padding: 1em;
-  background-color: #FFF;
-}
-
 
 // typography
 h2 {
   line-height: 1.3;
 }
-header a, footer a {
-  color: #fff;
-}
 ul {
   padding-left: 20px;
+}
+.mark {
+  background-color: red;
 }
 
 // links
@@ -55,6 +40,39 @@ a, a:link, a:visited {
 a:hover, a:focus {
   opacity: .7;
 }
+.site-header a, .site-footer a, .site-nav a {
+  color: #fff;
+}
+
+
+.site-header, .site-footer, .main-content {
+  max-width: 40em;
+  margin: 2em auto;
+}
+.site-header, .site-footer {
+  color: #FFF;
+  text-align: center;
+  padding: 1em;
+}
+.main-content {
+  max-width: 60em;
+  padding: 1em;
+  background-color: #FFF;
+}
+
+.site-nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  min-height: 3em;
+  background: $color_blue;
+  text-align: center;
+  a {
+    padding: .5em 1em;
+    border: 0;
+  }
+}
+
 
 .icon {
   svg {
@@ -103,7 +121,7 @@ a:hover, a:focus {
 }
 
 @media screen and (min-width: 25em) {
-  header, footer {
+  .site-header, .site-footer {
     padding: 2em 2em;
   }
   .main-content {
@@ -111,7 +129,7 @@ a:hover, a:focus {
   }
 }
 @media screen and (min-width: 42.5em) {
-  header, footer {
+  .site-header, .site-footer {
     padding: 2em 3em;
   }
   .main-content {
