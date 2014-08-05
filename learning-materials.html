@@ -27,6 +27,7 @@ permalink: /learning-materials/
         <h4 id="open_index">How to open index.html in your browser</h4>
         <p>So now you have an HTML file, sort of. To open it in your browser, use Windows Explorer, your Linux file manager or Finder on Mac to find your index.html file where you just saved it. By just double-clicking it your systems standard browser should open this file and show your sentence on the screen. Hooray!</p>
         <h4 id="edit_save_refresh">Edit, Save and refresh workflow</h4>
+        <strong class="mark">This section would be so much better with some screenshots...</strong>
         <p>Leave this browser window open and go back to your text editor. Edit your index.html by adding a second sentence. For example your file could look like this now: "Hello world! How are you?". Click "File -> Save" again (or use the keyboard shortcut to save some time!). Now go back to your browser. No change showing? Sad face? You'll have to click the "Refresh" button in your browser to see the change on screen. All there? Great! Now let's make this a <i>real</i> website.</p>
     </section>
 
@@ -45,22 +46,22 @@ permalink: /learning-materials/
 
         <p>Elements are what makes up a HTML document. You can put elements inside of other elements. An element can include three things: a tag, attributes, and content.</p>
 
-        <p>A Tag is the thing that indicates an element’s purpose. For example, the <code><p></code> tag indicates a paragraph of text is in that element, and the <code><li></code> represents a ‘list item’. You’ll notice they’re always surrounded by angle backets. Opening and Closing tags mark the beginning and end of an element and wrap its content, like so:</p>
+        <p>A Tag is the thing that indicates an element’s purpose. For example, the <code>&lt;p&gt;</code> tag indicates a paragraph of text is in that element, and the <code>&lt;li&gt;</code> represents a ‘list item’. You’ll notice they’re always surrounded by angle backets. Opening and Closing tags mark the beginning and end of an element and wrap its content, like so:</p>
 
         {% highlight HTML %}
             <p>This is a paragraph.</p>
         {% endhighlight %}
 
-        <p>You can see the closing tag includes a / before its name; otherwise it would be another opening tag!</p>
+        <p>You can see the closing tag includes a <code>/</code> before its name; otherwise it would be another opening tag!</p>
 
         <p>Always double-check that you’ve closed all your elements; otherwise, a browser can and will get mixed up trying to understand your HTML document.</p>
 
         <p>There are some specific elements that are exceptions to this rule. When elements cannot contain anything else, then they don’t need to be closed. For example, the following elements are referred to as ‘self-closing’:</p>
 
         {% highlight HTML %}
-            <hr>
-            <input>
-            <img>
+<hr>
+<input>
+<img>
         {% endhighlight %}
 
         <p>There aren’t so many of such elements, and you should easily pick up which are which by writing some more code :)</p>
@@ -74,24 +75,23 @@ permalink: /learning-materials/
         <p>or this:</p>
 
         {% highlight HTML %}
-        <div id="main-content">
-            <h1>The h1 tag indicates the primary header of the document.</h1>
-            <p>Some text.</p>
-        </div>
+<div id="main-content">
+    <h1>The h1 tag indicates the primary header of the document.</h1>
+    <p>Some text.</p>
+</div>
         {% endhighlight %}
 
         <p>You’ll notice that HTML doesn’t actually care about the whitespace or newlines between tags. It would end up looking the same if the above had been fit onto one line.</p>
 
-        <p>In the above example, you can see our first case of an attribute. It starts with a lowercase name, and then is almost always followed by an = and a ‘value’ that’s surrounded in double quotes, "like this". An element can have many attributes, in which case you separate them by spaces, as you’ll see soon. Attributes give information about an element in particular.</p>
+        <p>In the above example, you can see our first case of an attribute. It starts with a lowercase name, and then is almost always followed by an <code>=</code> and a ‘value’ that’s surrounded in double quotes, <code>"like this"</code>. An element can have many attributes, in which case you separate them by spaces, as you’ll see soon. Attributes give information about an element in particular.</p>
 
-        <p>In this case, the <code><div></code> tag (which is used to divide groups of elements up) has an id attribute with the value main-content. That’s telling us that this section of the document is designed to hold the main content on the page opposed to e.g. a sidebar or navigation. You will learn more about specific attributes later!</div>
-
+        <p>In this case, the <code>&lt;div&gt;</code> tag (which is used to divide groups of elements up) has an id attribute with the value main-content. That’s telling us that this section of the document is designed to hold the main content on the page opposed to e.g. a sidebar or navigation. You will learn more about specific attributes later!</div>
 
         <h4 id="boilerplate">HTML Boilerplate</h4>
         <p>There is some basic structure you should not spend too much time on that is always there. Lets handle this in a very quick walkthrough (code right, line-by-line comments left):</p>
         <div class="sidebyside">
             <div class="description">
-                This is a doctype. Every HTML file should have one. Basically you only need this one nowadays, as this means HTML5 (what you learn here) for modern browsers but old browsers still pick up on your file to be some kind of HTML.
+                This is a <strong>doctype</strong>. Every HTML file should have one. Basically you only need this one nowadays, as this means <strong>HTML5</strong> (what you learn here) for modern browsers but old browsers still pick up on your file to be some kind of HTML.
             </div>
             {% highlight HTML %}
                 <!DOCTYPE html>
@@ -99,7 +99,7 @@ permalink: /learning-materials/
         </div>
         <div class="sidebyside">
             <div class="description">
-                Here the HTML starts...
+                Here the HTML starts, so we put an opening <em>html</em> tag here...
             </div>
             {% highlight HTML %}
                 <html>
@@ -107,12 +107,69 @@ permalink: /learning-materials/
         </div>
         <div class="sidebyside">
             <div class="description">
-                ...and you write a "head" with some meta-information
+                Inside of the <em>head</em> we can put some meta-information...
             </div>
             {% highlight HTML %}
                 <head>
             {% endhighlight %}
         </div>
+        <div class="sidebyside">
+            <div class="description">
+                ...like the <em>charset</em>. This one is important, it will tell the browser which set of characters to use so all your Ûmlåute or ♥s will be shown correctly. If something seems wrong, make sure your editor saves HTML files with UTF-8 encoding.
+            </div>
+            {% highlight HTML %}
+                <meta charset="UTF-8">
+            {% endhighlight %}
+        </div>
+        <div class="sidebyside">
+            <div class="description">
+                ...or the <em>title</em>. You will see the title on your browser tab.
+            </div>
+            {% highlight HTML %}
+                <title>Our Page Title</title>
+            {% endhighlight %}
+        </div>
+        <div class="sidebyside">
+            <div class="description">
+                And then we'll close our <em>head</em> element and open our <em>body</em>, where the actual content goes (finally!).
+            </div>
+            {% highlight HTML %}
+</head>
+<body>
+            {% endhighlight %}
+        </div>
+        <div class="sidebyside">
+            <div class="description">
+                Here is just a <code>&lt;h1&gt;</code> that is a <em>heading</em> and a <em>comment</em> that will not be rendered in the browser. Even if it is many lines of actual HTML between <code>&lt;!--</code> and <code>&gt;--></code>. <strong class="mark">Someone include a good short example for comments here.</strong>
+            </div>
+            {% highlight HTML %}
+<h1>Hello world!</h1>
+<!-- put all the cat content here :) -->
+            {% endhighlight %}
+        </div>
+        <div class="sidebyside">
+            <div class="description">
+                And finally we close our <code>body</code> and <code>html</code> elements.
+            </div>
+            {% highlight HTML %}
+</body>
+</html>
+            {% endhighlight %}
+        </div>
+        And there we are, this is our first <em>valid</em> HTML file! Here it is again, so you can neatly copy&paste it:
+{% highlight HTML %}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Our Page Title</title>
+</head>
+<body>
+    <h1>Hello world!</h1>
+    <!-- put all the cat content here :) -->
+</body>
+</html>
+{% endhighlight %}
     </section>
 
     <section id="css">

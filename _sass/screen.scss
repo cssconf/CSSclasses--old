@@ -75,6 +75,19 @@ a:hover, a:focus {
   }
 }
 
+
+// Code that gets displayed inline
+code {
+  background-color: #f0f0f0;
+}
+// highlight block for highlighted code blocks
+.highlight {
+  padding: 5px;
+  background-color: #f0f0f0;
+  pre {
+    margin:0;
+  }
+}
 // Commented code blocks, need proper styling
 .sidebyside {
   display: block;
