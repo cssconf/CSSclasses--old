@@ -2,3 +2,4 @@ _site/*
 .DS_STORE
 .sass-cache/
 .sass-cache/*
+css/
