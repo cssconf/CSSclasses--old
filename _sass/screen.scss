@@ -3,7 +3,7 @@
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
 
-@import "compass/reset";
+@import "_reset";
 @import "_vars";
 @import "_mixins";
 @import "_typography";
@@ -46,7 +46,7 @@ a:hover, a:focus {
   padding: 1em;
 }
 .main-content {
-  max-width: 60em;
+  max-width: 40em;
   padding: 1em;
   background-color: #FFF;
 }
