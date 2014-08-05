@@ -5,6 +5,7 @@
 
 @import "compass/reset";
 @import "_vars";
+@import "_mixins";
 @import "_typography";
 
 
@@ -54,10 +55,13 @@ a:hover, a:focus {
   position: fixed;
   top: 0;
   width: 100%;
-  min-height: 3em;
+  min-height: 2.75em;
   background: $color_blue;
   text-align: center;
+  font-size: 0.83em;
+  @include uppercase;
   a {
+    display: inline-block;
     padding: .5em 1em;
     border: 0;
   }
