@@ -10,3 +10,4 @@ github_username:  cssconf
 # Build settings
 markdown: kramdown
 permalink: pretty
+highlighter: pygments
