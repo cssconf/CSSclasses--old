@@ -59,6 +59,7 @@ a:hover, a:focus {
   background: $color_blue;
   text-align: center;
   font-size: 0.83em;
+  z-index: 2;
   @include uppercase;
   a {
     display: inline-block;
