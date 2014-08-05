@@ -2,72 +2,6 @@
  * In this file you should write your main styles. (or centralize your imports)
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
-/* line 17, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font: inherit;
-  font-size: 100%;
-  vertical-align: baseline;
-}
-
-/* line 22, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
-html {
-  line-height: 1;
-}
-
-/* line 24, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
-ol, ul {
-  list-style: none;
-}
-
-/* line 26, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-
-/* line 28, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
-caption, th, td {
-  text-align: left;
-  font-weight: normal;
-  vertical-align: middle;
-}
-
-/* line 30, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
-q, blockquote {
-  quotes: none;
-}
-/* line 103, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
-q:before, q:after, blockquote:before, blockquote:after {
-  content: "";
-  content: none;
-}
-
-/* line 32, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
-a img {
-  border: none;
-}
-
-/* line 116, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
-article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
-  display: block;
-}
-
-/* line 1, ../_sass/_typography.scss */
 body {
   margin: 0;
   padding: 0;
@@ -76,139 +10,91 @@ body {
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
   line-height: 1.5;
-  text-rendering: optimizeLegibility;
-}
+  text-rendering: optimizeLegibility; }
 
-/* line 14, ../_sass/_typography.scss */
 body,
 input,
 button {
-  -webkit-font-smoothing: antialiased;
-}
+  -webkit-font-smoothing: antialiased; }
 
-/* line 19, ../_sass/_typography.scss */
 h1 {
-  font-size: 2em;
-}
+  font-size: 2em; }
 
-/* line 22, ../_sass/_typography.scss */
 h2 {
-  font-size: 1.5em;
-}
+  font-size: 1.5em; }
 
-/* line 25, ../_sass/_typography.scss */
 h3 {
-  font-size: 1.17em;
-}
+  font-size: 1.17em; }
 
-/* line 28, ../_sass/_typography.scss */
 h4 {
-  font-size: 1em;
-}
+  font-size: 1em; }
 
-/* line 31, ../_sass/_typography.scss */
 h5 {
-  font-size: 0.83em;
-}
+  font-size: 0.83em; }
 
-/* line 34, ../_sass/_typography.scss */
 h6 {
-  font-size: 0.75em;
-}
+  font-size: 0.75em; }
 
-/* line 38, ../_sass/_typography.scss */
 p {
-  margin-bottom: 1em;
-}
+  margin-bottom: 1em; }
 
-/* line 42, ../_sass/_typography.scss */
 ul, ol {
   margin-top: 1em;
-  margin-bottom: 1.5em;
-}
+  margin-bottom: 1.5em; }
 
-/* line 47, ../_sass/_typography.scss */
 strong, b {
-  font-weight: bold;
-}
+  font-weight: bold; }
 
-/* line 50, ../_sass/_typography.scss */
 em, i {
-  font-style: italic;
-}
+  font-style: italic; }
 
-/* line 55, ../_sass/_typography.scss */
 ul {
-  padding-left: 20px;
-}
+  padding-left: 20px; }
 
-/* line 58, ../_sass/_typography.scss */
 .mark {
-  background-color: red;
-}
+  background-color: red; }
 
-/* line 62, ../_sass/_typography.scss */
 .site-title {
-  font-size: 2em;
-}
+  font-size: 2em; }
 
-/* line 66, ../_sass/_typography.scss */
 .site-byline {
-  font-style: italic;
-}
+  font-style: italic; }
 
-/* line 12, ../_sass/screen.scss */
 * {
-  box-sizing: border-box;
-}
+  box-sizing: border-box; }
 
-/* line 15, ../_sass/screen.scss */
 body {
   margin: 0;
   padding: 0;
   background-color: #376184;
-  color: #000;
-}
+  color: #000; }
 
-/* line 24, ../_sass/screen.scss */
 a, a:visited {
   color: inherit;
   border-bottom: 2px solid;
-  text-decoration: none;
-}
+  text-decoration: none; }
 
-/* line 29, ../_sass/screen.scss */
 a:hover, a:focus {
-  opacity: .7;
-}
+  opacity: .7; }
 
-/* line 33, ../_sass/screen.scss */
 .site-header a, .site-footer a, .site-nav a {
   color: #fff;
-  border-bottom: 0;
-}
+  border-bottom: 0; }
 
-/* line 39, ../_sass/screen.scss */
 .site-header, .site-footer, .main-content {
   max-width: 40em;
-  margin: 2em auto;
-}
+  margin: 2em auto; }
 
-/* line 43, ../_sass/screen.scss */
 .site-header, .site-footer {
   color: #FFF;
   text-align: center;
-  padding: 1em;
-}
+  padding: 1em; }
 
-/* line 48, ../_sass/screen.scss */
 .main-content {
   max-width: 60em;
   padding: 1em;
-  background-color: #FFF;
-}
+  background-color: #FFF; }
 
-/* line 54, ../_sass/screen.scss */
 .site-nav {
   position: fixed;
   top: 0;
@@ -217,84 +103,60 @@ a:hover, a:focus {
   background: #376184;
   text-align: center;
   font-size: 0.83em;
+  z-index: 2;
   text-transform: uppercase;
-  letter-spacing: .025em;
-}
-/* line 63, ../_sass/screen.scss */
-.site-nav a {
-  display: inline-block;
-  padding: .5em 1em;
-  border: 0;
-}
+  letter-spacing: .025em; }
+  .site-nav a {
+    display: inline-block;
+    padding: .5em 1em;
+    border: 0; }
 
-/* line 72, ../_sass/screen.scss */
 .icon svg {
-  width: 28px;
-}
+  width: 28px; }
 
-/* line 78, ../_sass/screen.scss */
 .sidebyside {
   display: block;
-  position: relative;
-}
-/* line 81, ../_sass/screen.scss */
-.sidebyside:before {
-  content: ' ';
-  position: absolute;
-  left: 50%;
-  height: 100%;
-  width: 50%;
-  background-color: #f0f0f0;
-  display: block;
-  z-index: 0;
-}
-/* line 91, ../_sass/screen.scss */
-.sidebyside .description {
-  width: 50%;
-  display: inline-block;
-  padding: 5px;
-  vertical-align: top;
-  position: relative;
-  -ms-user-select: none;
-  -moz-user-select: none;
-  -o-user-select: none;
-  -webkit-user-select: none;
-  user-select: none;
-}
-/* line 103, ../_sass/screen.scss */
-.sidebyside .highlight {
-  width: 49%;
-  display: inline-block;
-  padding: 5px;
-  vertical-align: top;
-  height: 100%;
-  z-index: 1;
-  position: relative;
-}
-/* line 112, ../_sass/screen.scss */
-.sidebyside .highlight pre {
-  margin: 0;
-}
+  position: relative; }
+  .sidebyside:before {
+    content: ' ';
+    position: absolute;
+    left: 50%;
+    height: 100%;
+    width: 50%;
+    background-color: #f0f0f0;
+    display: block;
+    z-index: 0; }
+  .sidebyside .description {
+    width: 50%;
+    display: inline-block;
+    padding: 5px;
+    vertical-align: top;
+    position: relative;
+    -ms-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    -webkit-user-select: none;
+    user-select: none; }
+  .sidebyside .highlight {
+    width: 49%;
+    display: inline-block;
+    padding: 5px;
+    vertical-align: top;
+    height: 100%;
+    z-index: 1;
+    position: relative; }
+  .sidebyside .highlight pre {
+    margin: 0; }
 
 @media screen and (min-width: 25em) {
-  /* line 118, ../_sass/screen.scss */
   .site-header, .site-footer {
-    padding: 2em 2em;
-  }
+    padding: 2em 2em; }
 
-  /* line 121, ../_sass/screen.scss */
   .main-content {
-    padding: 2em 2em;
-  }
-}
+    padding: 2em 2em; } }
 @media screen and (min-width: 42.5em) {
-  /* line 126, ../_sass/screen.scss */
   .site-header, .site-footer {
-    padding: 2em 3em;
-  }
+    padding: 2em 3em; }
 
-  /* line 129, ../_sass/screen.scss */
   .main-content {
-    padding: 2em 3em;
-  }
-}
+    padding: 2em 3em; } }
