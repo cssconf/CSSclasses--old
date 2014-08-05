@@ -5,6 +5,7 @@
 
 @import "compass/reset";
 @import "_vars";
+@import "_typography";
 
 
 * {
@@ -15,24 +16,11 @@ body {
   padding: 0;
   background-color: $color_blue;
   color: #000;
-  font-family: 'Open Sans', sans-serif;
-  font-size: 16px;
-  line-height: 1.5;
 }
 
-// typography
-h2 {
-  line-height: 1.3;
-}
-ul {
-  padding-left: 20px;
-}
-.mark {
-  background-color: red;
-}
 
 // links
-a, a:link, a:visited {
+a, a:visited {
   color: inherit;
   border-bottom: 2px solid;
   text-decoration: none;
