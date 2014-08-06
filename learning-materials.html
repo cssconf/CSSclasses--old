@@ -177,8 +177,9 @@ permalink: /learning-materials/
     <section id="css">
         <h3>CSS</h3>
         <ul>
-            <li>CSS - What is that?</li>
-            <li>Explain basic CSS syntax</li>
+            <li><a href="#whatiscss">CSS - What is that?</a></li>
+            <li><a href="#inlinecss">Where do i put my CSS?</a></li>
+            <li><a href="#basiccsssyntax">Basic CSS syntax</a></li>
             <li>Start with inline styles (Move on to linking external CSS files when learners get frustrated with repetition)</li>
             <li>color</li>
             <li>background-color</li>
@@ -186,6 +187,42 @@ permalink: /learning-materials/
             <li>border</li>
             <li>width, height, display</li>
         </ul>
+
+        <h4 id="whatiscss">CSS - what is that?</h4>
+        <p>CSS is used to <em>style</em> your HTML elements. You can manipulate them colors, margins and positions of elements.</p>
+
+        <h4 id="inlinecss">Start with inline styles</h4>
+        <p>To get you started, you can just insert a <code>style</code> tag inside of your <code>head</code> tag:</p>
+{% highlight HTML %}
+<head>
+    <meta charset="UTF-8">
+    <title>Our Page Title</title>
+    <style type="text/css">
+        /* CSS styling rules here. Yes, comments are different in CSS. It's not our fault! */
+    </style>
+</head>
+{% endhighlight %}
+
+        <h4 id="basiccsssyntax">Basic CSS syntax</h4>
+        <p>CSS has a simple syntax. The file consists of a list of rules. Each rule consists of one or more <em>selectors</em> and a declaration block. Your selectors identify your HTML elements, so they are used to declare which part of the markup a style applies to. Let’s take the h1 title we wrote in our HTML file and give it a nice red color:</p>
+{% highlight CSS %}
+h1 {
+    color: red;
+}
+{% endhighlight %}
+        <p><code>h1</code> is the selector, the HTML element we want to style. <code>color</code> is one of the properties that we can give to our selector, and <code>red</code> is the value of this property. The right syntax is:</p>
+{% highlight CSS %}
+selector {
+    property: value; /* remember always to write a ; after your value. */
+    property: value;
+}
+{% endhighlight %}
+        <p>Refresh your browser and see how the colour of your title has changed. Wow, so red! Isn’t this nice? To give a background colour to our heading, add:
+{% highlight CSS %}
+h1 {
+    background-color: #ddd;
+}
+{% endhighlight %}
     </section>
 
     <section id="advanced_resources">
