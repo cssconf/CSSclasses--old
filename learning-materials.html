@@ -58,16 +58,6 @@ permalink: /learning-materials/
 
         <p>Always double-check that you’ve closed all your elements; otherwise, a browser can and will get mixed up trying to understand your HTML document.</p>
 
-        <p>There are some specific elements that are exceptions to this rule. When elements cannot contain anything else, then they don’t need to be closed. For example, the following elements are referred to as ‘self-closing’:</p>
-
-        {% highlight HTML %}
-<hr>
-<input>
-<img>
-        {% endhighlight %}
-
-        <p>There aren’t so many of such elements, and you should easily pick up which are which by writing some more code :)</p>
-
         <p>Lastly, having elements inside of each other (“nesting”) looks just like this:</p>
 
         {% highlight HTML %}
@@ -77,17 +67,12 @@ permalink: /learning-materials/
         <p>or this:</p>
 
         {% highlight HTML %}
-<div id="main-content">
+<div id="main-container">
     <h1>The h1 tag indicates the primary header of the document.</h1>
     <p>Some text.</p>
 </div>
         {% endhighlight %}
-
-        <p>You’ll notice that HTML doesn’t actually care about the whitespace or newlines between tags. It would end up looking the same if the above had been fit onto one line.</p>
-
-        <p>In the above example, you can see our first case of an attribute. It starts with a lowercase name, and then is almost always followed by an <code>=</code> and a ‘value’ that’s surrounded in double quotes, <code>"like this"</code>. An element can have many attributes, in which case you separate them by spaces, as you’ll see soon. Attributes give information about an element in particular.</p>
-
-        <p>In this case, the <code>&lt;div&gt;</code> tag (which is used to divide groups of elements up) has an id attribute with the value main-content. That’s telling us that this section of the document is designed to hold the main content on the page opposed to e.g. a sidebar or navigation. You will learn more about specific attributes later!</div>
+        <p>In the above example, you can see our first case of an attribute. It starts with a lowercase name, and then is almost always followed by an = and a ‘value’ that’s surrounded in double quotes, "like this". An element can have many attributes, in which case you separate them by spaces, as you’ll see soon. Attributes give information about an element in particular.</p>
 
         <h4 id="boilerplate">HTML Boilerplate</h4>
         <p>There is some basic structure you should not spend too much time on that is always there. Lets handle this in a very quick walkthrough (code right, line-by-line comments left):</p>
@@ -171,6 +156,46 @@ permalink: /learning-materials/
     <!-- put all the cat content here :) -->
 </body>
 </html>
+{% endhighlight %}
+    </section>
+    <section id="elements">
+        <p>Here are some practical elements:</p>
+        <h4>Headings (h1-h6)</h4>
+        <p>There is a hierarchy of heading elements that you can use for headlines. They start with h1 and end with h6.</p>
+{% highlight HTML %}
+<h1>heading 1</h1>
+<h2>heading 2</h2>
+<h3>heading 3</h3>
+<h4>heading 4</h4>
+<h5>heading 5</h5>
+<h6>heading 6</h6>
+{% endhighlight %}
+        <h4>Paragraph</h4>
+        <p>This is the perfect tag if you if you want to markup text. Even this text is wrapped in a p.</p>
+{% highlight HTML %}
+<p>Some text</p>
+{% endhighlight %}
+        <h4>Strong, em, break</h4>
+        <p>These are some inline Elements that you can nest inside a paragraph. <strong>Strong</strong> and <em>emphasis</em> give some meaning to pieces of text, while force a<br> linebreak.</p>
+{% highlight HTML %}
+<strong>Strong</strong> and <em>emphasis</em>,
+<br>break
+{% endhighlight %}
+        <h4>Images</h4>
+        <p>The image tag is special as it is self-closing, it has no closing tag (like the break tag). It also has a special attribute the src which carries the path to the actual image. The alt attribute is a placeholder, if the image does not <exist class=""></exist></p>
+{% highlight HTML %}
+<img src="//placekitten.com/500/200" alt="cat content">
+{% endhighlight %}
+        <img src="//placekitten.com/500/200" alt="cat content">
+        <h4>Links</h4>
+        <p>Links take the user to another page. The tag is simply an a which stands for anchor. It comes with the href (hyper reference) attribute, that tells the browser where to go to. You can also add a title attribute that shows once the user hovers over it.</p>
+{% highlight HTML %}
+<a href="http://cssconf.eu" title="CSS Conf EU">CSSConfEU</a>
+{% endhighlight %}
+        <h4>Div</h4>
+        <p>The div element is an element that does not have a special meaning or special styling. It's perfect for grouping other elements together and assigning them a class or an id.</p>
+{% highlight HTML %}
+<div>I do nothing special</div>
 {% endhighlight %}
     </section>
 
