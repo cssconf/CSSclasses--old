@@ -46,7 +46,7 @@ a:hover, a:focus {
   }
 }
 
-.button {
+.button, .button:visited {
   display: inline-block;
   margin: 1em auto;
   padding: 1em 3em;
@@ -55,6 +55,7 @@ a:hover, a:focus {
   font-size: 1.17em;
   color: $color_bg;
   background-color: $color_red;
+  border: none;
 }
 
 .site-header, .site-footer, .main-content {

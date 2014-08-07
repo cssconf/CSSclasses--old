@@ -54,9 +54,10 @@ em, i {
 }
 
 .lead-p {
-  text-align: center;
+  padding-top: 2em;
   padding-bottom: 2em;
   border-bottom: 3px solid $color_teal;
+  border-top: 3px solid $color_teal;
 }
 
 ul {
