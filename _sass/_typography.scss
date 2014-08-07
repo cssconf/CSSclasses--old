@@ -49,6 +49,15 @@ em, i {
   font-style: italic;
 }
 
+.t-center {
+  text-align: center;
+}
+
+.lead-p {
+  text-align: center;
+  padding-bottom: 2em;
+  border-bottom: 3px solid $color_teal;
+}
 
 ul {
   padding-left: 20px;

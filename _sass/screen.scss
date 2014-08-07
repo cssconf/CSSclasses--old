@@ -46,6 +46,15 @@ a:hover, a:focus {
   }
 }
 
+.button {
+  display: inline-block;
+  padding: 1em 2em;
+  @include uppercase;
+  font-weight: bold;
+  color: $color_bg;
+  background-color: $color_red;
+}
+
 .site-header, .site-footer, .main-content {
   max-width: 36em;
   margin: 2em auto;
@@ -64,6 +73,14 @@ a:hover, a:focus {
       padding: .5em 1em;
     }
   }
+}
+
+.end-note {
+  background-color: $color_red;
+  color: $color_bg;
+  font-size: .83em;
+  text-align: center;
+  padding: .5em;
 }
 
 .main-content {
@@ -158,7 +175,7 @@ code {
     padding: 2em 2em;
   }
   .main-content {
-    padding: 2em 2em;
+    padding: 3em 2em;
   }
 }
 @media screen and (min-width: 42.5em) {
@@ -166,7 +183,7 @@ code {
     padding: 2em 3em;
   }
   .main-content {
-    padding: 2em 5em;
+    padding: 4em 5em;
   }
 }
 
