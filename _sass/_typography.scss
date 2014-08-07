@@ -1,10 +1,8 @@
 body {
   margin: 0;
   padding: 0;
-  background-color: $color_blue;
-  color: #000;
   font-family: 'Open Sans', sans-serif;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 1.5;
   text-rendering: optimizeLegibility;
 }
@@ -60,6 +58,7 @@ ul {
 }
 
 .site-title {
+  font-weight: bold;
   font-size: 2em;
 }
 

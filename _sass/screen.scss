@@ -9,14 +9,14 @@
 @import "_mixins";
 @import "_typography";
 
-* {
+*, :before, :after {
   box-sizing: border-box;
 }
 body {
   margin: 0;
   padding: 0;
   background-color: $color_blue;
-  color: #000;
+  color: $color_text;
 }
 
 img {
@@ -25,7 +25,7 @@ img {
 
 // links
 a, a:visited {
-  color: inherit;
+  color: $color_blue;
   border-bottom: 2px solid;
   text-decoration: none;
 }
@@ -34,13 +34,20 @@ a:hover, a:focus {
 }
 .site-header, .site-footer, .site-nav {
   a {
-    color: #fff;
+    color: $color_bg;
+    border-bottom: 0;
+  }
+}
+
+.site-byline {
+  a {
+    color: $color_yellow;
     border-bottom: 0;
   }
 }
 
 .site-header, .site-footer, .main-content {
-  max-width: 40em;
+  max-width: 36em;
   margin: 2em auto;
 }
 .site-header, .site-footer {
@@ -51,7 +58,8 @@ a:hover, a:focus {
 .main-content {
   max-width: 60em;
   padding: 1em;
-  background-color: #FFF;
+  background-color: $color_bg;
+  border-top: 10px solid $color_teal;
 }
 
 .site-nav {
@@ -59,7 +67,7 @@ a:hover, a:focus {
   top: 0;
   width: 100%;
   min-height: 2.75em;
-  background: $color_blue;
+  background: $color_dark_blue;
   text-align: center;
   font-size: 0.83em;
   z-index: 2;
@@ -132,6 +140,9 @@ code {
 }
 
 @media screen and (min-width: 25em) {
+  body {
+    font-size: 16px;
+  }
   .site-header, .site-footer {
     padding: 2em 2em;
   }
@@ -144,7 +155,7 @@ code {
     padding: 2em 3em;
   }
   .main-content {
-    padding: 2em 3em;
+    padding: 2em 5em;
   }
 }
 
