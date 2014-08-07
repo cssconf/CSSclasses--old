@@ -48,9 +48,11 @@ a:hover, a:focus {
 
 .button {
   display: inline-block;
-  padding: 1em 2em;
+  margin: 1em auto;
+  padding: 1em 3em;
   @include uppercase;
   font-weight: bold;
+  font-size: 1.17em;
   color: $color_bg;
   background-color: $color_red;
 }

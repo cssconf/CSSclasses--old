@@ -917,12 +917,7 @@ ul {
 /* line 69, ../_sass/_typography.scss */
 .site-title {
   font-weight: bold;
-  font-size: 2em;
-}
-
-/* line 74, ../_sass/_typography.scss */
-.site-byline {
-  font-style: italic;
+  font-size: 3em;
 }
 
 /* line 12, ../_sass/screen.scss */
@@ -970,38 +965,40 @@ a:hover, a:focus {
 /* line 49, ../_sass/screen.scss */
 .button {
   display: inline-block;
-  padding: 1em 2em;
+  margin: 1em auto;
+  padding: 1em 3em;
   text-transform: uppercase;
   letter-spacing: .025em;
   font-weight: bold;
+  font-size: 1.17em;
   color: white;
   background-color: #ff6b69;
 }
 
-/* line 58, ../_sass/screen.scss */
+/* line 60, ../_sass/screen.scss */
 .site-header, .site-footer, .main-content {
   max-width: 36em;
   margin: 2em auto;
 }
 
-/* line 62, ../_sass/screen.scss */
+/* line 64, ../_sass/screen.scss */
 .site-header, .site-footer {
   color: #FFF;
   text-align: center;
   padding: 1em;
 }
 
-/* line 69, ../_sass/screen.scss */
+/* line 71, ../_sass/screen.scss */
 .footer-list li {
   display: inline-block;
   list-style: none;
 }
-/* line 72, ../_sass/screen.scss */
+/* line 74, ../_sass/screen.scss */
 .footer-list li a {
   padding: .5em 1em;
 }
 
-/* line 78, ../_sass/screen.scss */
+/* line 80, ../_sass/screen.scss */
 .end-note {
   background-color: #ff6b69;
   color: white;
@@ -1010,7 +1007,7 @@ a:hover, a:focus {
   padding: .5em;
 }
 
-/* line 86, ../_sass/screen.scss */
+/* line 88, ../_sass/screen.scss */
 .main-content {
   max-width: 60em;
   padding: 1em;
@@ -1018,7 +1015,7 @@ a:hover, a:focus {
   border-top: 10px solid #67c4b3;
 }
 
-/* line 93, ../_sass/screen.scss */
+/* line 95, ../_sass/screen.scss */
 .site-nav {
   position: fixed;
   top: 0;
@@ -1031,39 +1028,39 @@ a:hover, a:focus {
   text-transform: uppercase;
   letter-spacing: .025em;
 }
-/* line 103, ../_sass/screen.scss */
+/* line 105, ../_sass/screen.scss */
 .site-nav a {
   display: inline-block;
   padding: .5em 1em;
   border: 0;
 }
 
-/* line 112, ../_sass/screen.scss */
+/* line 114, ../_sass/screen.scss */
 .icon svg {
   width: 28px;
 }
 
-/* line 119, ../_sass/screen.scss */
+/* line 121, ../_sass/screen.scss */
 code {
   background-color: #f0f0f0;
 }
 
-/* line 123, ../_sass/screen.scss */
+/* line 125, ../_sass/screen.scss */
 .highlight {
   padding: 5px;
   background-color: #f0f0f0;
 }
-/* line 126, ../_sass/screen.scss */
+/* line 128, ../_sass/screen.scss */
 .highlight pre {
   margin: 0;
 }
 
-/* line 131, ../_sass/screen.scss */
+/* line 133, ../_sass/screen.scss */
 .sidebyside {
   display: block;
   position: relative;
 }
-/* line 134, ../_sass/screen.scss */
+/* line 136, ../_sass/screen.scss */
 .sidebyside:before {
   content: ' ';
   position: absolute;
@@ -1074,7 +1071,7 @@ code {
   display: block;
   z-index: 0;
 }
-/* line 144, ../_sass/screen.scss */
+/* line 146, ../_sass/screen.scss */
 .sidebyside .description {
   width: 50%;
   display: inline-block;
@@ -1087,7 +1084,7 @@ code {
   -webkit-user-select: none;
   user-select: none;
 }
-/* line 156, ../_sass/screen.scss */
+/* line 158, ../_sass/screen.scss */
 .sidebyside .highlight {
   width: 49%;
   display: inline-block;
@@ -1097,39 +1094,39 @@ code {
   z-index: 1;
   position: relative;
 }
-/* line 165, ../_sass/screen.scss */
+/* line 167, ../_sass/screen.scss */
 .sidebyside .highlight pre {
   margin: 0;
 }
 
 @media screen and (min-width: 25em) {
-  /* line 171, ../_sass/screen.scss */
+  /* line 173, ../_sass/screen.scss */
   body {
     font-size: 16px;
   }
 
-  /* line 174, ../_sass/screen.scss */
+  /* line 176, ../_sass/screen.scss */
   .site-header, .site-footer {
     padding: 2em 2em;
   }
 
-  /* line 177, ../_sass/screen.scss */
+  /* line 179, ../_sass/screen.scss */
   .main-content {
     padding: 3em 2em;
   }
 }
 @media screen and (min-width: 42.5em) {
-  /* line 182, ../_sass/screen.scss */
+  /* line 184, ../_sass/screen.scss */
   .site-header, .site-footer {
     padding: 2em 3em;
   }
 
-  /* line 185, ../_sass/screen.scss */
+  /* line 187, ../_sass/screen.scss */
   .main-content {
     padding: 4em 5em;
   }
 }
-/* line 190, ../_sass/screen.scss */
+/* line 192, ../_sass/screen.scss */
 .list-wo-bullets {
   padding: 0;
   list-style: none;
