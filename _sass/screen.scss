@@ -76,6 +76,7 @@ a:hover, a:focus {
   padding: 0;
   margin: 0;
   li {
+    margin-left: 20px;
     display: inline-block;
     list-style: none;
     line-height: 2.3;
@@ -90,7 +91,6 @@ a:hover, a:focus {
 
 .footer-link {
   position: relative;
-  margin-left: 10px;
   overflow: visible;
   svg {
     display: block;
@@ -106,12 +106,12 @@ a:hover, a:focus {
 }
 
 .footer-link .github {
-  left: -18px;
+  left: -20px;
   top: 2px;
 }
 
 .footer-link .twitter {
-  left: -15px;
+  left: -17px;
   top: 2px;
 }
 
