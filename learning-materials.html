@@ -1,0 +1,273 @@
+---
+layout: page
+title: Learning Materials
+permalink: /learning-materials/
+---
+
+    <h2>CSSclasses Workshop Materials</h2>
+    <strong class="mark">WORK IN PROGRESS, IMAGINE ONE OF THOSE NICE UNDER CONSTRUCTION GIFS HERE, FEEL FREE TO FILL THE GAPS</strong>
+
+    <p>We’ll start where needed, first steps can be skipped when everyone has prior experience. Let's break this down into several files whenever needed.</p>
+
+    <section id="basics">
+        <h3>Basics you <i>need</i> to know</h3>
+        <ul>
+            <li><a href="#browser">What is a browser</a></li>
+            <li><a href="#index">How to create a file called index.html</a></li>
+            <li><a href="#open_index">How to open it in the browser</a></li>
+            <li><a href="#edit_save_refresh">Edit, Save and refresh workflow</a></li>
+        </ul>
+
+        <h4 id="browser">What is a browser</h4>
+        <p>So. What is a browser? Chances are pretty high you know a browser because you are using one to look at this page. The browser is the tool that <i>renders</i> your website. It loads HTML files and shows their content to you using layout rules that were written in CSS to figure out <i>how the content should look</i>. There are standards for how HTML and CSS work, so theoretically websites should be rendered the same way in every browser if they were created following those standards.</p>
+        <p>The browser also handles all the nasty networking stuff for you and loads files from the internet to your computer to show them to you. And it knows how to deal with links so you can just click something and get a whole different website without having to type a different website address.</p>
+        <p>There are a many browsers. Popular choices (or pre-installed by the software company) for desktop and laptop computers are Firefox, Chrome, Opera, Safari and Internet Explorer. Also there are a lot of browsers for mobile phones like iOS Safari, Opera Mini, Android Browser, Blackberry Browser, Chrome and Firefox for Android and Internet Explorer Mobile. There are even more browsers for gaming devices, "smart" tvs, cars, fridges, watches… you get the idea.</p>
+        <h4 id="index">How to create a file called index.html</h4>
+        <p>Now it is time for you to create your first website! Open your text editor and create a new file. In Sublime Text you click the "File" menu and then click "New File". Now type "Hello World!" or any other sentence you always wanted to read in your favorite browser. Now click "File -> Save as..." and navigate to a folder you know how to find on your computer. It could be a good idea for now to just create a folder on your desktop or in your home folder called "cssclasses" and save your file in it. As a filename choose "index.html" and click "save".</p>
+        <img src="../images/new-save.png" alt="">
+        <h4 id="open_index">How to open index.html in your browser</h4>
+        <p>So now you have an HTML file, sort of. To open it in your browser, use Windows Explorer, your Linux file manager or Finder on Mac to find your index.html file where you just saved it. By just double-clicking it your systems standard browser should open this file and show your sentence on the screen. Hooray!</p>
+        <h4 id="edit_save_refresh">Edit, Save and refresh workflow</h4>
+        <strong class="mark">This section would be so much better with some screenshots...</strong>
+        <p>Leave this browser window open and go back to your text editor. Edit your index.html by adding a second sentence. For example your file could look like this now: "Hello world! How are you?". Click "File -> Save" again (or use the keyboard shortcut to save some time!). Now go back to your browser. No change showing? Sad face? You'll have to click the "Refresh" button in your browser to see the change on screen. All there? Great! Now let's make this a <i>real</i> website.</p>
+        <img src="../images/save-reload.png" alt="">
+    </section>
+
+    <section id="html_boilerplate">
+        <h3>Basic HTML & HTML boilerplate (as simple as possible)</h3>
+        <ul>
+            <li><a href="#elementstags">Elements and Tags</a></li>
+            <li><a href="#boilerplate">HTML Boilerplate</a></li>
+            <li><a href="#blockinline">block and inline (h1, p, div, span)</a></li>
+            <li>images</li>
+            <li>links</li>
+        </ul>
+
+        <h4 id="elementstags">Elements and Tags</h4>
+        <p>Elements and Tags are the basic building blocks of HTML.</p>
+
+        <p>Elements are what makes up a HTML document. You can put elements inside of other elements. An element can include three things: a tag, attributes, and content.</p>
+
+        <p>A Tag is the thing that indicates an element’s purpose. For example, the <code>&lt;p&gt;</code> tag indicates a paragraph of text is in that element, and the <code>&lt;li&gt;</code> represents a ‘list item’. You’ll notice they’re always surrounded by angle backets. Opening and Closing tags mark the beginning and end of an element and wrap its content, like so:</p>
+
+        {% highlight HTML %}
+            <p>This is a paragraph.</p>
+        {% endhighlight %}
+
+        <p>You can see the closing tag includes a <code>/</code> before its name; otherwise it would be another opening tag!</p>
+
+        <p>Always double-check that you’ve closed all your elements; otherwise, a browser can and will get mixed up trying to understand your HTML document.</p>
+
+        <p>Lastly, having elements inside of each other (“nesting”) looks just like this:</p>
+
+        {% highlight HTML %}
+            <p>This is a sentence, with a <em>em</em> element ("emphasize") inside it.</p>
+        {% endhighlight %}
+
+        <p>or this:</p>
+
+        {% highlight HTML %}
+<div id="main-container">
+    <h1>The h1 tag indicates the primary header of the document.</h1>
+    <p>Some text.</p>
+</div>
+        {% endhighlight %}
+        <p>In the above example, you can see our first case of an attribute. It starts with a lowercase name, and then is almost always followed by an = and a ‘value’ that’s surrounded in double quotes, "like this". An element can have many attributes, in which case you separate them by spaces, as you’ll see soon. Attributes give information about an element in particular.</p>
+
+        <h4 id="boilerplate">HTML Boilerplate</h4>
+        <p>There is some basic structure you should not spend too much time on that is always there. Lets handle this in a very quick walkthrough (code right, line-by-line comments left):</p>
+        <div class="sidebyside">
+            <div class="description">
+                This is a <strong>doctype</strong>. Every HTML file should have one. Basically you only need this one nowadays, as this means <strong>HTML5</strong> (what you learn here) for modern browsers but old browsers still pick up on your file to be some kind of HTML.
+            </div>
+            {% highlight HTML %}
+                <!DOCTYPE html>
+            {% endhighlight %}
+        </div>
+        <div class="sidebyside">
+            <div class="description">
+                Here the HTML starts, so we put an opening <em>html</em> tag here...
+            </div>
+            {% highlight HTML %}
+                <html>
+            {% endhighlight %}
+        </div>
+        <div class="sidebyside">
+            <div class="description">
+                Inside of the <em>head</em> we can put some meta-information...
+            </div>
+            {% highlight HTML %}
+                <head>
+            {% endhighlight %}
+        </div>
+        <div class="sidebyside">
+            <div class="description">
+                ...like the <em>charset</em>. This one is important, it will tell the browser which set of characters to use so all your Ûmlåute or ♥s will be shown correctly. If something seems wrong, make sure your editor saves HTML files with UTF-8 encoding.
+            </div>
+            {% highlight HTML %}
+                <meta charset="UTF-8">
+            {% endhighlight %}
+        </div>
+        <div class="sidebyside">
+            <div class="description">
+                ...or the <em>title</em>. You will see the title on your browser tab.
+            </div>
+            {% highlight HTML %}
+                <title>Our Page Title</title>
+            {% endhighlight %}
+        </div>
+        <div class="sidebyside">
+            <div class="description">
+                And then we'll close our <em>head</em> element and open our <em>body</em>, where the actual content goes (finally!).
+            </div>
+            {% highlight HTML %}
+</head>
+<body>
+            {% endhighlight %}
+        </div>
+        <div class="sidebyside">
+            <div class="description">
+                Here is just a <code>&lt;h1&gt;</code> that is a <em>heading</em> and a <em>comment</em> that will not be rendered in the browser. Even if it is many lines of actual HTML between <code>&lt;!--</code> and <code>&gt;--></code>. <strong class="mark">Someone include a good short example for comments here.</strong>
+            </div>
+            {% highlight HTML %}
+<h1>Hello world!</h1>
+<!-- put all the cat content here :) -->
+            {% endhighlight %}
+        </div>
+        <div class="sidebyside">
+            <div class="description">
+                And finally we close our <code>body</code> and <code>html</code> elements.
+            </div>
+            {% highlight HTML %}
+</body>
+</html>
+            {% endhighlight %}
+        </div>
+        And there we are, this is our first <em>valid</em> HTML file! Here it is again, so you can neatly copy&paste it:
+{% highlight HTML %}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Our Page Title</title>
+</head>
+<body>
+    <h1>Hello world!</h1>
+    <!-- put all the cat content here :) -->
+</body>
+</html>
+{% endhighlight %}
+    </section>
+    <section id="elements">
+        <p>Here are some practical elements:</p>
+        <h4>Headings (h1-h6)</h4>
+        <p>There is a hierarchy of heading elements that you can use for headlines. They start with h1 and end with h6.</p>
+{% highlight HTML %}
+<h1>heading 1</h1>
+<h2>heading 2</h2>
+<h3>heading 3</h3>
+<h4>heading 4</h4>
+<h5>heading 5</h5>
+<h6>heading 6</h6>
+{% endhighlight %}
+        <h4>Paragraph</h4>
+        <p>This is the perfect tag if you if you want to markup text. Even this text is wrapped in a p.</p>
+{% highlight HTML %}
+<p>Some text</p>
+{% endhighlight %}
+        <h4>Strong, em, break</h4>
+        <p>These are some inline Elements that you can nest inside a paragraph. <strong>Strong</strong> and <em>emphasis</em> give some meaning to pieces of text, while force a<br> linebreak.</p>
+{% highlight HTML %}
+<strong>Strong</strong> and <em>emphasis</em>,
+<br>break
+{% endhighlight %}
+        <h4>Images</h4>
+        <p>The image tag is special as it is self-closing, it has no closing tag (like the break tag). It also has a special attribute the src which carries the path to the actual image. The alt attribute is a placeholder, if the image does not <exist class=""></exist></p>
+{% highlight HTML %}
+<img src="//placekitten.com/500/200" alt="cat content">
+{% endhighlight %}
+        <img src="//placekitten.com/500/200" alt="cat content">
+        <h4>Links</h4>
+        <p>Links take the user to another page. The tag is simply an a which stands for anchor. It comes with the href (hyper reference) attribute, that tells the browser where to go to. You can also add a title attribute that shows once the user hovers over it.</p>
+{% highlight HTML %}
+<a href="http://cssconf.eu" title="CSS Conf EU">CSSConfEU</a>
+{% endhighlight %}
+        <h4>Div</h4>
+        <p>The div element is an element that does not have a special meaning or special styling. It's perfect for grouping other elements together and assigning them a class or an id.</p>
+{% highlight HTML %}
+<div>I do nothing special</div>
+{% endhighlight %}
+    </section>
+
+    <section id="css">
+        <h3>CSS</h3>
+        <ul>
+            <li><a href="#whatiscss">CSS - What is that?</a></li>
+            <li><a href="#inlinecss">Where do i put my CSS?</a></li>
+            <li><a href="#basiccsssyntax">Basic CSS syntax</a></li>
+            <li><a href="#properties">Useful properties</a></li>
+            <li>font-size</li>
+            <li>border</li>
+            <li>width, height, display</li>
+        </ul>
+
+        <h4 id="whatiscss">CSS - what is that?</h4>
+        <p>CSS is used to <em>style</em> your HTML elements. You can manipulate the colors, margins, positions and many other <em>properties</em> of elements. This is done through the rules you write. Sometimes more than one rule applies to an element, so CSS decides which properties are actually applied to the element in case the two rules conflict with each other. This is the "cascading" part of our <strong>C</strong>ascading <strong>S</strong>tyle <strong>S</strong>heet.</p>
+
+        <h4 id="inlinecss">Start with inline styles</h4>
+        <p>To get you started, you can just insert a <code>style</code> tag inside of your <code>head</code> tag:</p>
+{% highlight HTML %}
+<head>
+    <meta charset="UTF-8">
+    <title>Our Page Title</title>
+    <style type="text/css">
+        /* CSS styling rules here. Yes, comments are different in CSS. It's not our fault! */
+    </style>
+</head>
+{% endhighlight %}
+
+        <h4 id="basiccsssyntax">Basic CSS syntax</h4>
+        <p>CSS has a simple syntax. The file consists of a list of rules. Each rule consists of one or more <em>selectors</em> and a declaration block. Your selectors identify your HTML elements, so they are used to declare which part of the markup a style applies to. Let’s take the h1 title we wrote in our HTML file and give it a nice red color:</p>
+{% highlight CSS %}
+h1 {
+    color: red;
+}
+{% endhighlight %}
+        <p><code>h1</code> is the selector, the HTML element we want to style. <code>color</code> is one of the properties that we can give to our selector, and <code>red</code> is the value of this property. The right syntax is:</p>
+{% highlight CSS %}
+selector {
+    property: value; /* remember always to write a ; after your value. */
+    property: value;
+}
+{% endhighlight %}
+        <p>Refresh your browser and see how the colour of your title has changed. Wow, so red! Isn’t this nice?</p>
+
+        <h4 id="properties">Useful CSS properties</h4>
+        <p>Now, let us insert a <code>div</code> and style it a little bit. So parts of your file should look like this:</p>
+{% highlight HTML %}
+<head>
+    <!-- ... -->
+    <style type="text/css">
+        div {
+            color: white;
+            background-color: green;
+            width: 300px;
+            height: 200px;
+        }
+    </style>
+</head>
+<body>
+<div>I'm a div</div>
+</body>
+{% endhighlight %}
+        <p>So now if you save and hit refresh, you should see a green block with some white text stating "I'm a div" on it. So here you see some properties, you already know <code>color</code>. There is also <code>background-color</code>, <code>width</code> and <code>height</code>.</p>
+    </section>
+
+    <section id="advanced_resources">
+        <h3>Resources for self-learning and expert groups</h3>
+        <ul>
+            <li>CSS spec</li>
+            <li>good beginner tutorials</li>
+            <li>HTML boilerplate</li>
+        </ul>
+    </section>
