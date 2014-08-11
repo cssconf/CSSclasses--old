@@ -8,6 +8,7 @@
 @import "_pygments";
 @import "_mixins";
 @import "_typography";
+@import "parallax";
 
 *, :before, :after {
   box-sizing: border-box;
@@ -61,6 +62,8 @@ a:hover, a:focus {
 .site-header, .site-footer, .main-content {
   max-width: 36em;
   margin: 2em auto;
+  z-index: 10;
+  position: relative;
 }
 .site-header, .site-footer {
   color: #FFF;
@@ -131,7 +134,7 @@ a:hover, a:focus {
 }
 
 .site-nav {
-  position: fixed;
+  position: absolute;
   top: 0;
   width: 100%;
   min-height: 2.75em;
