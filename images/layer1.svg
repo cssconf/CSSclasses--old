@@ -1,15 +1,1 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<svg width="817px" height="364px" viewBox="0 0 817 364" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
-    <title>Slice 1</title>
-    <description>Created with Sketch (http://www.bohemiancoding.com/sketch)</description>
-    <defs></defs>
-    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
-        <g id="Group" sketch:type="MSLayerGroup">
-            <path d="M35.7148438,177.820183 L71.0701828,142.464844 L35.7148438,107.109505 L0.359504691,142.464844 L35.7148438,177.820183 Z" id="Rectangle-1" fill="#D76766" sketch:type="MSShapeGroup"></path>
-            <path d="M337.714844,273.820183 L373.070183,238.464844 L337.714844,203.109505 L302.359505,238.464844 L337.714844,273.820183 Z" id="Rectangle-1-copy" fill="#94C5B4" sketch:type="MSShapeGroup"></path>
-            <path d="M630.714844,70.8201828 L666.070183,35.4648438 L630.714844,0.109504691 L595.359505,35.4648438 L630.714844,70.8201828 Z" id="Rectangle-1-copy-2" fill="#F2CC74" sketch:type="MSShapeGroup"></path>
-            <path d="M127.714844,356.820183 L163.070183,321.464844 L127.714844,286.109505 L92.3595047,321.464844 L127.714844,356.820183 Z" id="Rectangle-1-copy-3" fill="#0D2543" sketch:type="MSShapeGroup"></path>
-            <path d="M780.714844,363.820183 L816.070183,328.464844 L780.714844,293.109505 L745.359505,328.464844 L780.714844,363.820183 Z" id="Rectangle-1-copy-3" fill="#D76766" sketch:type="MSShapeGroup"></path>
-        </g>
-    </g>
-</svg>
+<svg width="817" height="364" viewBox="0 0 817 364" xmlns="http://www.w3.org/2000/svg" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns"><title>Slice 1</title><g sketch:type="MSLayerGroup" fill="none"><path d="M35.715 177.82l35.355-35.355-35.355-35.355-35.355 35.355 35.355 35.355z" fill="#D76766" sketch:type="MSShapeGroup"/><path d="M337.715 273.82l35.355-35.355-35.355-35.355-35.355 35.355 35.355 35.355z" fill="#94C5B4" sketch:type="MSShapeGroup"/><path d="M630.715 70.82l35.355-35.355-35.355-35.355-35.355 35.355 35.355 35.355z" fill="#F2CC74" sketch:type="MSShapeGroup"/><path d="M127.715 356.82l35.355-35.355-35.355-35.355-35.355 35.355 35.355 35.355z" id="Rectangle-1-copy-3" fill="#0D2543" sketch:type="MSShapeGroup"/><path d="M780.715 363.82l35.355-35.355-35.355-35.355-35.355 35.355 35.355 35.355z" fill="#D76766" sketch:type="MSShapeGroup"/></g></svg>
