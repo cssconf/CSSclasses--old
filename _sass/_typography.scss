@@ -72,7 +72,14 @@ ul {
   font-size: 3em;
 }
 
-.site-byline {
-  
+.false, .true {
+  font-weight: 600;
 }
 
+.false {
+  color: red;
+}
+
+.true {
+  color: green;
+}
