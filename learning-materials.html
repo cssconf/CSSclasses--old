@@ -206,9 +206,10 @@ permalink: /learning-materials/
             <li><a href="#inlinecss">Where do i put my CSS?</a></li>
             <li><a href="#basiccsssyntax">Basic CSS syntax</a></li>
             <li><a href="#properties">Useful properties</a></li>
-            <li><a href="#font-family">font-family</a></li>
-            <li><a href="#font-size">font-size</a></li>
-            <li><a href="#border">border</a></li>
+            <li><a href="#font-family">Font-Family</a></li>
+            <li><a href="#font-size">Font-Size</a></li>
+            <li><a href="#border">Border</a></li>
+            <li><a href="#hover">Hover</a></li>
             <li>width, height, display</li>
         </ul>
 
@@ -359,6 +360,24 @@ border: 20px dashed #ff88aa;
 border: <line-width> || <line-style> || <color>;
         {% endhighlight %}
         <p>Here you see an even thicker border that is not solid and has a different color, but is also <code>dashed</code> instead of <code>solid</code>. The color is a good example for how many different types of values a lot of CSS properties accept. There is <b>no</b> chance to list them all, so most of the time you will find yourself searching the web for the accepted input values, or you can look it up in the <em>CSS spec</em> (check links at the end of the tutorial). This color value is in HEX RGB notation, use can a color picker tool to find the right color.</p>
+
+        <h4 id="hover">Hover</h4>
+        <p>Hover is a small example of how you can add some fun little interactivity to your site. Take our <code>div</code> example from above and let's add a little bit to our CSS:</p>
+        {% higlight CSS %}
+div {
+    color: white;
+    background-color: green;
+    width: 300px;
+    height: 200px;
+    font-family: sans-serif;
+    border: 5px solid black;
+}
+div:hover {
+    background-color: red;
+    border: 5px dotted black;
+}
+        {% endhighlight %}
+        <p>If you apply this CSS to our <a href="#border">border</a> example, you will see no change at first. But if you move your mouse cursor <em>over</em> the div (you "<code>hover</code>" it), you will see the style changes applied, that we defined with the <code>div:hover</code> "pseudo"-class. There are some more "pseudo"-classes like that that you can learn about later.</p>
     </section>
 
     <section id="advanced_resources">
@@ -368,4 +387,7 @@ border: <line-width> || <line-style> || <color>;
             <li>good beginner tutorials</li>
             <li>HTML boilerplate</li>
         </ul>
+
+        <!-- unsorted useful links for further learning... -->
+        <a href="http://css-tricks.com/pseudo-class-selectors/">Pseudo Class Selectors</a>
     </section>
