@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+
+  {% include head.html %}
+
+    <body>
+      <div class="parallax">
+        {% include header-landing.html %}
+        <div class="parallax__layer parallax__layer--level1"></div>
+        <div class="parallax__layer parallax__layer--level2"></div>
+        <div class="parallax__layer parallax__layer--level3"></div>
+        <div class="main-content">
+
+          {{ content }}
+
+        </div>
+
+        {% include footer.html %}
+      </div>
+    </body>
+</html>
