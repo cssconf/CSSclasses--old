@@ -271,21 +271,7 @@ body {
 }
 {% endhighlight %}
         <p>Font family names must either be given quoted as strings, or unquoted as a sequence of one or more identifiers. This means that punctuation characters and digits at the start of each token must be escaped in unquoted font family names.</p>
-        <p>The following declarations are <span class="false">invalid</span>:</p>
-{% highlight CSS %}
-body {
-    font-family: Goudy Bookletter 1911, sans-serif;
-}
-
-h1 {
-    font-family: "Lucida" Grande, sans-serif;
-}
-
-p {
-    font-family: Hawaii 5-0, sans-serif;
-}
-{% endhighlight %}
-        <p>And here a few examples how it's done <span class="true">right</span>:</p>
+        <p>Here a few examples how it's done <span class="true">right</span>:</p>
 {% highlight CSS %}
 body {
     font-family: Times, "Times New Roman", Georgia, serif;
