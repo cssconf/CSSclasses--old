@@ -213,7 +213,7 @@ permalink: /learning-materials/
             <li><a href="#font-size">Font-Size</a></li>
             <li><a href="#border">Border</a></li>
             <li><a href="#hover">Hover</a></li>
-            <li>width, height, display</li>
+            <li><a href="#classes">Class Selectors</a></li>
         </ul>
 
         <h4 id="whatiscss">CSS - what is that?</h4>
@@ -381,6 +381,58 @@ div:hover {
 }
         {% endhighlight %}
         <p>If you apply this CSS to our <a href="#border">border</a> example, you will see no change at first. But if you move your mouse cursor <em>over</em> the div (you "<code>hover</code>" it), you will see the style changes applied, that we defined with the <code>div:hover</code> "pseudo"-class. There are some more "pseudo"-classes like that that you can learn about later.</p>
+
+        <h4 id="classes">Class Selectors</h4>
+        <p>Until now you just wrote element selectors. What's wrong with that you ask? Well, consider you might want to have have <em>two</em> divs on your page.</p>
+        {% highlight html %}
+<head>
+    <!-- ... -->
+    <style type="text/css">
+        div {
+            color: white;
+            background-color: green;
+            width: 300px;
+            height: 200px;
+            font-family: sans-serif;
+            border: 5px solid black;
+        }
+    </style>
+</head>
+<body>
+<div>I am a div with a border</div>
+<div>I am a different div but i look like the other one! Sadface!</div>
+</body>
+        {% endhighlight %}
+        <p>If you put this into your html file, you'll see. Now let us say the second div should be blue. We can achieve that by assigning classes to the divs in our HTML and then style these through class selectors:</p>
+        {% highlight html %}
+<head>
+    <!-- ... -->
+    <style type="text/css">
+        div {
+            width: 300px;
+            height: 200px;
+            font-family: sans-serif;
+            border: 5px solid black;
+        }
+        .greenthing {
+            background-color: green;
+        }
+        .bluething {
+            background-color: blue;
+            font-family: serif;
+            text-align: center;
+        }
+        .border-dotted {
+            border: 5px dotted black;
+        }
+    </style>
+</head>
+<body>
+<div class="greenthing">I am a div with a border</div>
+<div class="bluething border-dotted">I am a different div and i don't look like the other one any more! YAY!</div>
+</body>
+        {% endhighlight %}
+        <p>Now here you should note several things. Both divs get the styles of the <code>div</code> rule, as this applies to all divs. Then the first div gets the styles of the <code>greenthing</code>. In HTML the classes get assigned by writing a class <em>attribute</em> inside of the opening tag of the element. The second div has two classes, you can assign as many of them as you want! Just separate them by a space. In the CSS code class selectors are marked by a dot like this: <code>.border-dotted</code>. This class is remarkable as it <code>overrides</code> the border style that was defined in the <code>div</code> selector.</p>
     </section>
 
     <section id="advanced_resources">
