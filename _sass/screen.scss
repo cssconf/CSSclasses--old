@@ -9,6 +9,7 @@
 @import "_mixins";
 @import "_typography";
 @import "parallax";
+@import "nav";
 
 *, :before, :after {
   box-sizing: border-box;
@@ -132,24 +133,6 @@ a:hover, a:focus {
   background-color: $color_bg;
   border-top: 10px solid $color_teal;
 }
-
-.site-nav {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  min-height: 2.75em;
-  background: $color_dark_blue;
-  text-align: center;
-  font-size: 0.83em;
-  z-index: 2;
-  @include uppercase;
-  a {
-    display: inline-block;
-    padding: .5em 1em;
-    border: 0;
-  }
-}
-
 
 .icon {
   svg {

@@ -18,5 +18,11 @@
 
         {% include footer.html %}
       </div>
+      <script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+      <script>
+        $('button').click(function() {
+          $(this).toggleClass('expanded').siblings('div').slideToggle();
+        });
+      </script>
     </body>
 </html>
