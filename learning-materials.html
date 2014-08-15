@@ -208,7 +208,7 @@ permalink: /learning-materials/
             <li><a href="#properties">Useful properties</a></li>
             <li><a href="#font-family">font-family</a></li>
             <li><a href="#font-size">font-size</a></li>
-            <li>border</li>
+            <li><a href="#border">border</a></li>
             <li>width, height, display</li>
         </ul>
 
@@ -333,6 +333,32 @@ p {
         {% endhighlight %}
         <p>First you can see we set the <code>font-size</code> for <em>everything inside of the html element</em> to a small <code>10px</code> (by default modern browsers set 16px). All the elements on the inside will inherit this value, if they don't have a different rule for their font size. As you can see, the <code>h1</code> has a value of <code>32px</code> assigned, so the browser shows us a big heading while the div has the small text size without having any <code>font-size</code> property declared.</p>
 
+        <h4 id="border">Border</h4>
+        <p>You can also put a nice <code>border</code> around your elements. Try this:</p>
+        {% highlight html %}
+<head>
+    <!-- ... -->
+    <style type="text/css">
+        div {
+            color: white;
+            background-color: green;
+            width: 300px;
+            height: 200px;
+            font-family: sans-serif;
+            border: 5px solid black;
+        }
+    </style>
+</head>
+<body>
+<div>I am a div with a border</div>
+</body>
+        {% endhighlight %}
+        <p>Now you assigned your <code>div</code> to have a <code>black</code> border that is <code>5px</code> thick and <code>solid</code>. Let's dissect the <code>border</code> property a little bit with a different border and a generic description:</p>
+        {% highlight CSS %}
+border: 20px dashed #ff88aa;
+border: <line-width> || <line-style> || <color>;
+        {% endhighlight %}
+        <p>Here you see an even thicker border that is not solid and has a different color, but is also <code>dashed</code> instead of <code>solid</code>. The color is a good example for how many different types of values a lot of CSS properties accept. There is <b>no</b> chance to list them all, so most of the time you will find yourself searching the web for the accepted input values, or you can look it up in the <em>CSS spec</em> (check links at the end of the tutorial). This color value is in HEX RGB notation, use can a color picker tool to find the right color.</p>
     </section>
 
     <section id="advanced_resources">
