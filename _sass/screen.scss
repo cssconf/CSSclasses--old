@@ -31,9 +31,11 @@ a, a:visited {
   border-bottom: 2px solid;
   text-decoration: none;
 }
+
 a:hover, a:focus {
   opacity: .7;
 }
+
 .site-header, .site-footer, .site-nav {
   a {
     color: $color_bg;
@@ -45,6 +47,24 @@ a:hover, a:focus {
   a {
     color: $color_yellow;
     border-bottom: 0;
+  }
+}
+
+.team {
+  a[href^="https://twitter.com"],
+  a[href^="https://github.com"] {
+    background-repeat: no-repeat;
+    color: #929090;
+    border-bottom: none;
+    padding-left: 1.6em;
+  }
+
+  a[href^="https://twitter.com"] {
+    background-image: url(../images/twitter.svg);
+  }
+
+  a[href^="https://github.com"] {
+    background-image: url(../images/github.svg)
   }
 }
 
