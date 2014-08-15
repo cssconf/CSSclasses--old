@@ -1251,27 +1251,32 @@ a:hover, a:focus {
   width: 28px;
 }
 
-/* line 165, ../_sass/screen.scss */
+/* line 163, ../_sass/screen.scss */
+section {
+  margin-bottom: 50px;
+}
+
+/* line 168, ../_sass/screen.scss */
 code {
   background-color: #f0f0f0;
 }
 
-/* line 169, ../_sass/screen.scss */
+/* line 172, ../_sass/screen.scss */
 .highlight {
   padding: 5px;
   background-color: #f0f0f0;
 }
-/* line 172, ../_sass/screen.scss */
+/* line 175, ../_sass/screen.scss */
 .highlight pre {
   margin: 0;
 }
 
-/* line 177, ../_sass/screen.scss */
+/* line 180, ../_sass/screen.scss */
 .sidebyside {
   display: block;
   position: relative;
 }
-/* line 180, ../_sass/screen.scss */
+/* line 183, ../_sass/screen.scss */
 .sidebyside:before {
   content: ' ';
   position: absolute;
@@ -1282,7 +1287,7 @@ code {
   display: block;
   z-index: 0;
 }
-/* line 190, ../_sass/screen.scss */
+/* line 193, ../_sass/screen.scss */
 .sidebyside .description {
   width: 50%;
   display: inline-block;
@@ -1295,7 +1300,7 @@ code {
   -webkit-user-select: none;
   user-select: none;
 }
-/* line 202, ../_sass/screen.scss */
+/* line 205, ../_sass/screen.scss */
 .sidebyside .highlight {
   width: 49%;
   display: inline-block;
@@ -1305,39 +1310,39 @@ code {
   z-index: 1;
   position: relative;
 }
-/* line 211, ../_sass/screen.scss */
+/* line 214, ../_sass/screen.scss */
 .sidebyside .highlight pre {
   margin: 0;
 }
 
 @media screen and (min-width: 25em) {
-  /* line 217, ../_sass/screen.scss */
+  /* line 220, ../_sass/screen.scss */
   body {
     font-size: 16px;
   }
 
-  /* line 220, ../_sass/screen.scss */
+  /* line 223, ../_sass/screen.scss */
   .site-header, .site-footer {
     padding: 2em 2em;
   }
 
-  /* line 223, ../_sass/screen.scss */
+  /* line 226, ../_sass/screen.scss */
   .main-content {
     padding: 3em 2em;
   }
 }
 @media screen and (min-width: 42.5em) {
-  /* line 228, ../_sass/screen.scss */
+  /* line 231, ../_sass/screen.scss */
   .site-header, .site-footer {
     padding: 2em 3em;
   }
 
-  /* line 231, ../_sass/screen.scss */
+  /* line 234, ../_sass/screen.scss */
   .main-content {
     padding: 4em 5em;
   }
 }
-/* line 236, ../_sass/screen.scss */
+/* line 239, ../_sass/screen.scss */
 .list-wo-bullets {
   padding: 0;
   list-style: none;
