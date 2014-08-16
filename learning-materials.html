@@ -64,24 +64,24 @@ permalink: /learning-materials/
 
     {% highlight HTML %}
 <div id="main-container">
-<h1>The h1 tag indicates the primary header of the document.</h1>
-<p>Some text.</p>
+  <h1>The h1 tag indicates the primary header of the document.</h1>
+  <p>Some text.</p>
 </div>
     {% endhighlight %}
     <p>In the above example, you can see our first case of an attribute. It starts with a lowercase name, and then is almost always followed by an = and a ‘value’ that’s surrounded in double quotes, "like this". An element can have many attributes, in which case you separate them by spaces, as you’ll see soon. Attributes give information about an element in particular.</p>
     <h4 id="pageflow">Pageflow</h4>
     <p>In most circumstances "normal flow" is the way that elements are layed out on a web page. Every element in HTML is inside a rectangular box. Shown on the picture below.</p>
     <img src="../images/pageflow-boxes.png" alt="">
-    <p>In our example, each of these boxes are one of two different types: inline boxes or block boxes. So what exactly does this mean? Let’s start with block boxes.</p>
-    <p>Block boxes are positioned one after the other in order they’ve been written in the HTML file. They normally start in the upper left corner and go down to the bottom.</p>
-    <p>Here is a simple example. Don’t get confused on the CSS. It’s just there for the purpose of making things visual.</p>
+    <p>In our example, each of these boxes are one of two different types: <strong>inline boxes</strong> or <strong>block boxes</strong>. So what exactly does this mean? Let’s start with block boxes.</p>
+    <p><strong>Block boxes</strong> are positioned one after the other in order they’ve been written in the HTML file. They normally start in the upper left corner and go down to the bottom.</p>
+    <p>Here is a simple example. Don’t get confused by the additional CSS. It’s just there for the purpose of making the boxes visible.</p>
     <p data-height="404" data-theme-id="0" data-slug-hash="tmcHC" data-default-tab="result" class='codepen'>See the Pen <a href='http://codepen.io/verpixelt/pen/tmcHC/'>CSSClasses Block Boxes</a> by Kevin Lorenz (<a href='http://codepen.io/verpixelt'>@verpixelt</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
     <script async src="//codepen.io/assets/embed/ei.js"></script>
-    <p>Inline Boxes on the other hand work a bit different. These boxes, placed in an HTML document, will also start at to upper left corner, but will arrange itselfs horizontal.</p>
-    <p>Here’s an example for that aswell.</p>
+    <p><strong>Inline Boxes</strong> work a bit different. These boxes will also start at to upper left corner, but will arrange itselfs horizontal.</p>
+    <p>Here’s an example for that as well.</p>
     <p data-height="268" data-theme-id="0" data-slug-hash="rtvGu" data-default-tab="result" class='codepen'>See the Pen <a href='http://codepen.io/verpixelt/pen/rtvGu/'>CSSClasses inline box</a> by Kevin Lorenz (<a href='http://codepen.io/verpixelt'>@verpixelt</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
     <script async src="//codepen.io/assets/embed/ei.js"></script>
-    <p>So HTML elements are by default either block boxes or inline boxes(also on this case there are a few exceptions). For example, div is a block element, a heading like h1, h2 or so is, too. Span or strong on the other hand are inline elements. Here are lists for the different elements:</p>
+    <p>So HTML elements are by default either <strong>block boxes</strong> or <strong>inline boxes</strong> (of course, there are exceptions to this rule, but we don’t have to worry about that for now). For example, <code>div</code> is a block element, and so are headings like <code>h1</code> or <code>h2</code>. <code>span</code> or <code>strong</code> on the other hand are <strong>inline elements</strong>. Here are lists for the different elements:</p>
     <ul>
         <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Block-level_elements">Block-level elements</a></li>
         <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Inline_elemente">Inline elements</a></li>
@@ -90,7 +90,7 @@ permalink: /learning-materials/
     <p>There is some basic structure you should not spend too much time on that is always there. Lets handle this in a very quick walkthrough (code right, line-by-line comments left):</p>
     <div class="sidebyside">
         <div class="description">
-            This is a <strong>doctype</strong>. Every HTML file should have one. Basically you only need this one nowadays, as this means <strong>HTML5</strong> (what you learn here) for modern browsers but old browsers still pick up on your file to be some kind of HTML.
+            This is a <code>doctype</code>. Every HTML file should have one. Basically you only need this one nowadays, as this means <code>HTML5</code> (what you learn here) for modern browsers but old browsers still pick up on your file to be some kind of HTML.
         </div>
         {% highlight HTML %}
             <!DOCTYPE html>
@@ -98,7 +98,7 @@ permalink: /learning-materials/
     </div>
     <div class="sidebyside">
         <div class="description">
-            Here the HTML starts, so we put an opening <em>html</em> tag here…
+            Here the HTML starts, so we put an opening <code>html</code> tag here…
         </div>
         {% highlight HTML %}
             <html>
@@ -106,7 +106,7 @@ permalink: /learning-materials/
     </div>
     <div class="sidebyside">
         <div class="description">
-            Inside of the <em>head</em> we can put some meta-information…
+            Inside of the <code>head</code> we can put some meta-information…
         </div>
         {% highlight HTML %}
             <head>
@@ -114,7 +114,7 @@ permalink: /learning-materials/
     </div>
     <div class="sidebyside">
         <div class="description">
-            …like the <em>charset</em>. This one is important, it will tell the browser which set of characters to use so all your Ûmlåute or ♥s will be shown correctly. If something seems wrong, make sure your editor saves HTML files with UTF-8 encoding.
+            …like the <code>charset</code>. This one is important, it will tell the browser which set of characters to use so all your Ûmlåute or ♥s will be shown correctly. If something seems wrong, make sure your editor saves HTML files with UTF-8 encoding.
         </div>
         {% highlight HTML %}
             <meta charset="UTF-8">
@@ -122,7 +122,7 @@ permalink: /learning-materials/
     </div>
     <div class="sidebyside">
         <div class="description">
-            …or the <em>title</em>. You will see the title on your browser tab.
+            …or the <code>title</code>. You will see the title on your browser tab.
         </div>
         {% highlight HTML %}
             <title>Our Page Title</title>
@@ -130,7 +130,7 @@ permalink: /learning-materials/
     </div>
     <div class="sidebyside">
         <div class="description">
-            And then we’ll close our <em>head</em> element and open our <em>body</em>, where the actual content goes (finally!).
+            And then we’ll close our <code>head</code> element and open our <code>body</code>, where the actual content goes (finally!).
         </div>
         {% highlight HTML %}
 </head>
@@ -183,7 +183,7 @@ permalink: /learning-materials/
 <h6>heading 6</h6>
 {% endhighlight %}
     <h4>Paragraph</h4>
-    <p>This is the perfect tag if you if you want to markup text. Even this text is wrapped in a p.</p>
+    <p>This is the perfect tag if you want to markup text. Even this text is wrapped in a p.</p>
 {% highlight HTML %}
 <p>Some text</p>
 {% endhighlight %}
@@ -194,7 +194,7 @@ permalink: /learning-materials/
 <br>break
 {% endhighlight %}
     <h4 id="images">Images</h4>
-    <p>The image tag is special as it is self-closing, it has no closing tag (like the break tag). It also has a special attribute the src which carries the path to the actual image. The alt attribute is a placeholder, if the image does not <exist class=""></exist></p>
+    <p>The image tag is special as it is self-closing, it has no closing tag (like the break tag). It also has a special attribute the src which carries the path to the actual image. The alt attribute is a placeholder, if the image does for some reason not load.</p>
 {% highlight HTML %}
 <img src="//placekitten.com/500/200" alt="cat content">
 {% endhighlight %}
