@@ -897,12 +897,17 @@ em, i {
   font-style: italic;
 }
 
-/* line 56, ../_sass/_typography.scss */
+/* line 55, ../_sass/_typography.scss */
+.strike {
+  text-decoration: line-through;
+}
+
+/* line 59, ../_sass/_typography.scss */
 .t-center {
   text-align: center;
 }
 
-/* line 60, ../_sass/_typography.scss */
+/* line 63, ../_sass/_typography.scss */
 .lead-p {
   padding-top: 2em;
   padding-bottom: 2em;
@@ -910,33 +915,33 @@ em, i {
   border-top: 3px solid #67c4b3;
 }
 
-/* line 67, ../_sass/_typography.scss */
+/* line 70, ../_sass/_typography.scss */
 ul {
   padding-left: 20px;
 }
 
-/* line 70, ../_sass/_typography.scss */
+/* line 73, ../_sass/_typography.scss */
 .mark {
   background-color: red;
 }
 
-/* line 74, ../_sass/_typography.scss */
+/* line 77, ../_sass/_typography.scss */
 .site-title {
   font-weight: bold;
   font-size: 3em;
 }
 
-/* line 79, ../_sass/_typography.scss */
+/* line 82, ../_sass/_typography.scss */
 .false, .true {
   font-weight: 600;
 }
 
-/* line 83, ../_sass/_typography.scss */
+/* line 86, ../_sass/_typography.scss */
 .false {
   color: red;
 }
 
-/* line 87, ../_sass/_typography.scss */
+/* line 90, ../_sass/_typography.scss */
 .true {
   color: green;
 }
