@@ -8,8 +8,9 @@
 @import "_pygments";
 @import "_mixins";
 @import "_typography";
-@import "parallax";
-@import "nav";
+@import "_parallax";
+@import "_nav";
+@import "_challenges";
 
 *, :before, :after {
   box-sizing: border-box;

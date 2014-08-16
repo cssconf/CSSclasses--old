@@ -234,26 +234,26 @@ permalink: /learning-materials/
     <p>To get you started, you can just insert a <code>style</code> tag inside of your <code>head</code> tag:</p>
 {% highlight HTML %}
 <head>
-<meta charset="UTF-8">
-<title>Our Page Title</title>
-<style type="text/css">
+  <meta charset="UTF-8">
+  <title>Our Page Title</title>
+  <style type="text/css">
     /* CSS styling rules here. Yes, comments are different in CSS. It’s not our fault! */
-</style>
-</head>
+  </style>
+  </head>
 {% endhighlight %}
 
     <h4 id="basiccsssyntax">Basic CSS syntax</h4>
     <p>CSS has a simple syntax. The file consists of a list of rules. Each rule consists of one or more <em>selectors</em> and a declaration block. Your selectors identify your HTML elements, so they are used to declare which part of the markup a style applies to. Let’s take the h1 title we wrote in our HTML file and give it a nice red color:</p>
 {% highlight CSS %}
 h1 {
-color: red;
+  color: red;
 }
 {% endhighlight %}
     <p><code>h1</code> is the selector, the HTML element we want to style. <code>color</code> is one of the properties that we can give to our selector, and <code>red</code> is the value of this property. The right syntax is:</p>
 {% highlight CSS %}
 selector {
-property: value; /* remember always to write a ; after your value. */
-property: value;
+  property: value; /* remember always to write a ; after your value. */
+  property: value;
 }
 {% endhighlight %}
     <p>Refresh your browser (CMD + R) and see how the color of your title has changed. Wow, so red! Isn’t this nice?</p>
@@ -263,17 +263,17 @@ property: value;
 {% highlight HTML %}
 <head>
 <!-- ... -->
-<style type="text/css">
+  <style type="text/css">
     div {
-        color: white;
-        background-color: green;
-        width: 300px;
-        height: 200px;
+      color: white;
+      background-color: green;
+      width: 300px;
+      height: 200px;
     }
-</style>
+  </style>
 </head>
 <body>
-<div>I’m a div</div>
+  <div>I’m a div</div>
 </body>
 {% endhighlight %}
     <p>So now if you save (CMD + S) and hit refresh (CMD + R), you should see a green block with some white text stating "I’m a div" on it. So here you see some properties, you already know <code>color</code>. There is also <code>background-color</code>, <code>width</code> and <code>height</code>.</p>
@@ -282,40 +282,40 @@ property: value;
     <p>You should always add at least one generic family in a font-family list, since there’s no guarantee that a specific font is installed on the computer or can be downloaded.</p>
     {% highlight CSS %}
 body {
-font-family: Proxima-Nova, Helvetica, sans-serif;
+  font-family: Proxima-Nova, Helvetica, sans-serif;
 }
 {% endhighlight %}
     <p>Font family names must either be given quoted as strings, or unquoted as a sequence of one or more identifiers. This means that punctuation characters and digits at the start of each token must be escaped in unquoted font family names.</p>
     <p>Here a few examples how it’s done <span class="true">right</span>:</p>
 {% highlight CSS %}
 body {
-font-family: Times, "Times New Roman", Georgia, serif;
+  font-family: Times, "Times New Roman", Georgia, serif;
 }
 
 h1 {
-font-family: Verdana, Arial, Helvetica, sans-serif;
+  font-family: Verdana, Arial, Helvetica, sans-serif;
 }
 
 p {
-font-family: cursive;
+  font-family: cursive;
 }
 {% endhighlight %}
 <p>Keep going with our example let’s add a font-family to the <code>div</code> we’ve created before.</p>
 {% highlight HTML %}
 <head>
 <!-- ... -->
-<style type="text/css">
+  <style type="text/css">
     div {
-        color: white;
-        background-color: green;
-        width: 300px;
-        height: 200px;
-        font-family: sans-serif;
+      color: white;
+      background-color: green;
+      width: 300px;
+      height: 200px;
+      font-family: sans-serif;
     }
-</style>
+  </style>
 </head>
 <body>
-<div>I’m a div</div>
+  <div>I’m a div</div>
 </body>
 {% endhighlight %}
 <p>If you hit refresh (CMD + R) again, your font-family should have changed from the default serif to sans-serif. Now that wasn’t so hard, was it?</p>
@@ -325,25 +325,25 @@ font-family: cursive;
     {% highlight html %}
 <head>
 <!-- ... -->
-<style type="text/css">
+  <style type="text/css">
     html {
-        font-size: 10px;
+      font-size: 10px;
     }
     h1 {
-        font-size: 32px;
+      font-size: 32px;
     }
     div {
-        color: white;
-        background-color: green;
-        width: 300px;
-        height: 200px;
-        font-family: sans-serif;
+      color: white;
+      background-color: green;
+      width: 300px;
+      height: 200px;
+      font-family: sans-serif;
     }
-</style>
+  </style>
 </head>
 <body>
-<h1>I am a big heading</h1>
-<div>I am a div</div>
+  <h1>I am a big heading</h1>
+  <div>I am a div</div>
 </body>
     {% endhighlight %}
     <p>First you can see we set the <code>font-size</code> for <em>everything inside of the html element</em> to a small <code>10px</code> (by default modern browsers set 16px). All the elements on the inside will inherit this value, if they don’t have a different rule for their font size. As you can see, the <code>h1</code> has a value of <code>32px</code> assigned, so the browser shows us a big heading while the div has the small text size without having any <code>font-size</code> property declared.</p>
@@ -353,19 +353,19 @@ font-family: cursive;
     {% highlight html %}
 <head>
 <!-- ... -->
-<style type="text/css">
+  <style type="text/css">
     div {
-        color: white;
-        background-color: green;
-        width: 300px;
-        height: 200px;
-        font-family: sans-serif;
-        border: 5px solid black;
+      color: white;
+      background-color: green;
+      width: 300px;
+      height: 200px;
+      font-family: sans-serif;
+      border: 5px solid black;
     }
-</style>
+  </style>
 </head>
 <body>
-<div>I am a div with a border</div>
+  <div>I am a div with a border</div>
 </body>
     {% endhighlight %}
     <p>Now you assigned your <code>div</code> to have a <code>black</code> border that is <code>5px</code> thick and <code>solid</code>. Let’s dissect the <code>border</code> property a little bit with a different border and a generic description:</p>
@@ -463,6 +463,42 @@ div:hover {
     {% endhighlight %}
     <p>Now here you should note several things. Both <code>div</code>s get the styles of the <code>div</code> rule, as this applies to all <code>div</code>s. Then the first <code>div</code> also gets the styles of the class <code>.greenthing</code>. In HTML the classes get assigned by writing a class <em>attribute</em> inside of the opening tag of the element. The second <code>div</code> has two classes – you can assign as many of them as you want! Just separate them by a space. In the CSS code, class selectors are marked by a dot like this: <code>.border-dotted</code>. This class is remarkable as it <code>overrides</code> the border style that was defined in the <code>div</code> selector.</p>
 </section>
+
+<section id="challenges">
+  <h2>Challenges: Start experimenting!</h2>
+  <p>
+    Believe it or not: Now you know the basics of getting content and styles on your website! You might have noticed that, once you got the hang of the basic syntax, CSS is surprisingly simple and often self-explanatory. From here on, you have all the tools you need to explore the many more properties and possibilities of CSS. Start experimenting – we want to see what you discovered in the demos!
+  </p>
+  <h3>Some ideas to get you started…</h3>
+  <div class="challenge">
+    <div class="example dotted_circle"></div>
+
+    <p>
+      <strong>The dotted circle</strong>: You already know how to apply these borders to a box, right? Now make it a circle! Hint: Look up the <code>border-radius</code> property!
+    </p>
+  </div>
+  
+  <div class="challenge">
+    <a class="example fancy_link" href="3">Hover me!</a>
+
+    <p>
+      <strong>The fancy link</strong>: <code>border-radius</code>, <code>background-color</code>, <code>padding</code>, <code>:hover</code> … you know most of the things to create a nice looking link like this!
+    </p>
+  </div>
+  
+  <div class="challenge">
+    <div class="example polaroid">
+      <img src="http://distilleryimage5.ak.instagram.com/22452da87ebf11e28d8c22000a1f9ad6_7.jpg" alt="Lake Tahoe" />
+    </div>
+
+    <p>
+      <strong>The Polaroid</strong>: You know how to add an <code>img</code>, you know how to apply <code>padding</code>. If now you can figure out how <code>box-shadow</code> works, creating a Polaroid effect like this will be a piece of cake for you!
+    </p>
+  </div>
+  
+
+</section>
+
 
 <section id="advanced_resources">
     <h3>Resources for self-learning and expert groups</h3>

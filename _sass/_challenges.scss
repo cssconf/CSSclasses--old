@@ -1,0 +1,45 @@
+
+.challenge {
+  clear: both;
+  margin-top: 1em;
+  padding-top: 1em;
+  border-top: 1px solid $color_teal;
+}
+
+.example {
+  float: right;
+  margin: 0 1em 1em 2em;
+}
+
+.dotted_circle {
+  width: 80px;
+  height: 80px;
+  border: 4px dotted $color_red;
+  border-radius: 50%;
+}
+
+.fancy_link {
+  display: block;
+  margin-top: 2.5em;
+  padding: 2px 15px;
+  border-radius: 15px;
+  background: $color_blue;
+  font-size: 12px;
+  font-weight: bold;
+  color: #FFF;
+  text-decoration: none;
+  &:hover {
+    background: $color_red;
+  }
+}
+
+.polaroid {
+  padding: 12px 12px 32px;
+  background: #FFF;
+  box-shadow: 5px 5px 10px black;
+  img {
+    max-width: 140px;
+    height: auto;
+    margin: 0;
+  }
+}
