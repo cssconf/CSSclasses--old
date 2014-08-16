@@ -166,18 +166,27 @@ section {
   padding-top: 2em;
   padding-bottom: 2em;
   border-top: 4px solid $color_teal;
+  img {
+    display: block;
+    margin-top: 1em;
+    margin-bottom: 1em;
+  }
 }
 
 // Code that gets displayed inline
 code {
-  background-color: #f0f0f0;
+  padding: 1px 2px;
+  border-radius: 2px;
+  background-color: $color_code_bg;
 }
 // highlight block for highlighted code blocks
 .highlight {
-  padding: 5px;
-  background-color: #f0f0f0;
+  margin: 1em 0;
+  background-color: $color_code_bg;
   pre {
-    margin:0;
+    margin: 0;
+    padding: 1em;
+    font-size: 14px;
   }
 }
 // Commented code blocks, need proper styling
@@ -190,7 +199,7 @@ code {
     left: 50%;
     height: 100%;
     width: 50%;
-    background-color: #f0f0f0;
+    background-color: $color_code_bg;
     display: block;
     z-index: 0;
   }
