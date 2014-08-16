@@ -161,7 +161,11 @@ a:hover, a:focus {
 }
 
 section {
-  margin-bottom: 50px;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  padding-top: 2em;
+  padding-bottom: 2em;
+  border-top: 4px solid $color_teal;
 }
 
 // Code that gets displayed inline
