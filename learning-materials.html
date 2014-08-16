@@ -70,18 +70,18 @@ permalink: /learning-materials/
     {% endhighlight %}
     <p>In the above example, you can see our first case of an attribute. It starts with a lowercase name, and then is almost always followed by an = and a ‘value’ that’s surrounded in double quotes, "like this". An element can have many attributes, in which case you separate them by spaces, as you’ll see soon. Attributes give information about an element in particular.</p>
     <h4 id="pageflow">Pageflow</h4>
-    <p>In most circumstances "normal flow" is the way that elements are layed out on a web page. Every element in HTML is inside a rectangular box. Shown on the picture below.</p>
+    <p>In most circumstances "normal flow" is the way that elements are laid out on a web page. Every element in HTML is inside a rectangular box. Shown on the picture below.</p>
     <img src="../images/pageflow-boxes.png" alt="">
     <p>In our example, each of these boxes are one of two different types: inline boxes or block boxes. So what exactly does this mean? Let’s start with block boxes.</p>
     <p>Block boxes are positioned one after the other in order they’ve been written in the HTML file. They normally start in the upper left corner and go down to the bottom.</p>
     <p>Here is a simple example. Don’t get confused on the CSS. It’s just there for the purpose of making things visual.</p>
     <p data-height="404" data-theme-id="0" data-slug-hash="tmcHC" data-default-tab="result" class='codepen'>See the Pen <a href='http://codepen.io/verpixelt/pen/tmcHC/'>CSSClasses Block Boxes</a> by Kevin Lorenz (<a href='http://codepen.io/verpixelt'>@verpixelt</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
     <script async src="//codepen.io/assets/embed/ei.js"></script>
-    <p>Inline Boxes on the other hand work a bit different. These boxes, placed in an HTML document, will also start at to upper left corner, but will arrange itselfs horizontal.</p>
-    <p>Here’s an example for that aswell.</p>
+    <p>Inline Boxes on the other hand work a bit different. These boxes, placed in an HTML document, will also start at to upper left corner, but will arrange themselves horizontally.</p>
+    <p>Here’s an example for that as well.</p>
     <p data-height="268" data-theme-id="0" data-slug-hash="rtvGu" data-default-tab="result" class='codepen'>See the Pen <a href='http://codepen.io/verpixelt/pen/rtvGu/'>CSSClasses inline box</a> by Kevin Lorenz (<a href='http://codepen.io/verpixelt'>@verpixelt</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
     <script async src="//codepen.io/assets/embed/ei.js"></script>
-    <p>So HTML elemnts are by default either block boxes or inline boxes(also on this case there are a few exceptions). For example, div is a block element, a heading like h1, h2 or so is, too. Span or strong on the other hand are inline elements. Here are lists for the different elements:</p>
+    <p>So HTML elements are by default either block boxes or inline boxes (also on this case there are a few exceptions). For example, div is a block element, a heading like h1, h2 or so is, too. Span or strong on the other hand are inline elements. Here are lists for the different elements:</p>
     <ul>
         <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Block-level_elements">Block-level elements</a></li>
         <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Inline_elemente">Inline elements</a></li>
@@ -221,6 +221,7 @@ permalink: /learning-materials/
         <li><a href="#font-family">Font-Family</a></li>
         <li><a href="#font-size">Font-Size</a></li>
         <li><a href="#border">Border</a></li>
+        <li><a href="#boxmodel">The Box Model</a></li>
         <li><a href="#hover">Hover</a></li>
         <li><a href="#classes">Class Selectors</a></li>
     </ul>
@@ -372,6 +373,21 @@ border: 20px dashed #ff88aa;
 border: <line-width> || <line-style> || <color>;
     {% endhighlight %}
     <p>Here you see an even thicker border that is not solid and has a different color, but is also <code>dashed</code> instead of <code>solid</code>. The color is a good example for how many different types of values a lot of CSS properties accept. Let’s just say there are a lot more than would fit nicely on this page. Often you’ll find yourself searching the web for the accepted input values, or looking them up in the <em>CSS spec</em> (check links at the end of the tutorial). This color value is in HEX RGB notation. It can be convenient to use a color picker tool (you can find them online or even use good ol’ MSPaint!) to find the color you want and then just copy and paste the value from there.</p>
+    <h4 id="boxmodel">The Box Model</h4>
+    <p>The Box Model is something that describes how all of these boxes behave, and how the browser knows about the space they occupy on a page.</p>
+
+    <p>We've told you that you can specify width, height and borders, but there's more than that. You can also specify a padding, which is some space between your content and the edge of the box. And you can specify a margin, which is the size between the box and it's neighbouring boxes.</p>
+
+    <p>Here's an example with all of these properties so you can see how they behave. Note that the content is 5px away from the border, and that the boxes are 10px away from each other.</p>
+    <p data-height="268" data-theme-id="0" data-slug-hash="jzfqi" data-default-tab="result" class='codepen'>See the Pen <a href='http://codepen.io/trodrigues/pen/jzfqi/'>jzfqi</a> by Tiago Rodrigues (<a href='http://codepen.io/trodrigues'>@trodrigues</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+<script async src="//codepen.io/assets/embed/ei.js"></script>
+
+    <p>And here you can see how these different properties compose a box:</p>
+    <p><img src="../images/boxmodel.png" alt=""></p>
+
+    <!-- TODO need to explain shorthand before explaining the padding stuff and how much size it occupies -->
+    <!--<p>Now, how much space does this box occupy on a page? We need to take into account not just the width and the height that was specified, but also the paddings and the borders (we can forget about the margins for now). So in reality, our box occupies a size of 80x plus 5px on each side for the paddings, </p>
+    -->
 
     <h4 id="hover">Hover</h4>
     <p>Hover is a small example of how you can add some fun little interactivity to your site. Take our <code>div</code> example from above and let’s add a little bit to our CSS:</p>
@@ -443,6 +459,7 @@ border: 5px dotted black;
     {% endhighlight %}
     <p>Now here you should note several things. Both divs get the styles of the <code>div</code> rule, as this applies to all divs. Then the first div gets the styles of the <code>greenthing</code>. In HTML the classes get assigned by writing a class <em>attribute</em> inside of the opening tag of the element. The second div has two classes, you can assign as many of them as you want! Just separate them by a space. In the CSS code class selectors are marked by a dot like this: <code>.border-dotted</code>. This class is remarkable as it <code>overrides</code> the border style that was defined in the <code>div</code> selector.</p>
 </section>
+
 
 <section id="advanced_resources">
     <h3>Resources for self-learning and expert groups</h3>
