@@ -229,6 +229,11 @@ code {
   }
 }
 
+// for codepens
+iframe {
+  border: 1px solid $color_teal;
+}
+
 @media screen and (min-width: 25em) {
   body {
     font-size: 16px;
