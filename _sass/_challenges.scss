@@ -43,3 +43,43 @@
     margin: 0;
   }
 }
+
+.galaxy {
+  width: 80px;
+  height: 80px;
+  border: 2px solid $color_teal;
+  position: relative;
+  border-radius: 100%;
+  .rotation_axis {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 50%;
+    height: 0;
+    -webkit-transform-origin: left;
+            transform-origin: left;
+    -webkit-animation: rotating_star 2.5s linear infinite;
+            animation: rotating_star 2.5s linear infinite;
+  }
+  .sun, .star {
+    border-radius: 100%;
+    position: absolute;
+  }
+  .sun {
+    width: 16px;
+    height: 16px;
+    left: -8px;
+    top: -8px;
+    background: $color_yellow;
+  }
+  .star {
+    width: 10px;
+    height: 10px;
+    background: $color_dark_blue;
+    right: -5px;
+    top: -3px;
+  }
+}
+
+@-webkit-keyframes rotating_star { from { -webkit-transform: rotate(0) } to { -webkit-transform: rotate(-360deg) } }
+        @keyframes rotating_star { from { transform: rotate(0) } to { transform: rotate(-360deg) } }
