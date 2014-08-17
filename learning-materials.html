@@ -219,6 +219,7 @@ permalink: /learning-materials/
         <li><a href="#inlinecss">Where do I put my CSS?</a></li>
         <li><a href="#basiccsssyntax">Basic CSS syntax</a></li>
         <li><a href="#properties">Useful properties</a></li>
+        <li><a href="#shorthand">Shorthand</a></li>
         <li><a href="#font-family">Font-Family</a></li>
         <li><a href="#font-size">Font-Size</a></li>
         <li><a href="#border">Border</a></li>
@@ -276,6 +277,24 @@ property: value;
 </body>
 {% endhighlight %}
     <p>So now if you save and hit refresh, you should see a green block with some white text stating "I’m a div" on it. So here you see some properties, you already know <code>color</code>. There is also <code>background-color</code>, <code>width</code> and <code>height</code>.</p>
+
+    <h4 id="shorthand">Shorthand</h4>
+    <p>On some occasions you might see properties defined in different ways but doing the same thing, such as:</p>
+{% highlight CSS %}
+selector {
+  border-width: 1px;
+  border-style: dotted;
+  border-color: green;
+}
+
+anotherselector {
+  border: 1px dotted green;
+}
+{% endhighlight %}
+
+<p>This is what we call shorthand. Some properties have a shorthand format that allows us to define more properties at once, but just in one line. The order and the way it works is not always very obvious so you might need to look it up on a <a href="http://devdocs.io/css">reference</a>, but don't worry too much about it for now. It's just good that you know that it exists in case you see it. If you think it's confusing, just use the non shorthand format for your own code and specify each property at a time.</p>
+
+
     <h4 id="font-family">Font-family</h4>
     <p>The <code>font-family</code> CSS property allows for a prioritized list of font family names and/or generic family names to be specified for the selected element. Unlike most other CSS properties, values are separated by a comma to indicate that they are alternatives. The browser will select the first font on the list that is installed on the computer, or that can be downloaded.</p>
     <p>You should always add at least one generic family in a font-family list, since there’s no guarantee that a specific font is installed on the computer or can be downloaded.</p>
