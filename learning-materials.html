@@ -394,12 +394,13 @@ border: 20px dashed #ff88aa;
 border: <line-width> || <line-style> || <color>;
     {% endhighlight %}
     <p>Here you see an even thicker border that is not solid and has a different color, but is also <code>dashed</code> instead of <code>solid</code>. The color is a good example for how many different types of values a lot of CSS properties accept. Let’s just say there are a lot more than would fit nicely on this page. Often you’ll find yourself searching the web for the accepted input values, or looking them up in the <em>CSS spec</em> (check links at the end of the tutorial). This color value is in HEX RGB notation. It can be convenient to use a color picker tool (you can find them online or even use good ol’ MSPaint!) to find the color you want and then just copy and paste the value from there.</p>
+
     <h4 id="boxmodel">The Box Model</h4>
     <p>The Box Model is something that describes how all of these boxes behave, and how the browser knows about the space they occupy on a page.</p>
 
-    <p>We've told you that you can specify width, height and borders, but there's more than that. You can also specify a padding, which is some space between your content and the edge of the box. And you can specify a margin, which is the size between the box and it's neighbouring boxes.</p>
+    <p>We’ve told you that you can specify width, height and borders, but there’s more than that. You can also specify a <code>padding</code>, which is some space between your content and the edge of the box. And you can specify a <code>margin</code>, which is the size between the box and it's neighboring boxes.</p>
 
-    <p>Here's an example with all of these properties so you can see how they behave. Note that the content is 5px away from the border, and that the boxes are 10px away from each other.</p>
+    <p>Here’s an example with all of these properties so you can see how they behave. Note that the content is 5px away from the border, and that the boxes are 10px away from each other.</p>
     <p data-height="268" data-theme-id="0" data-slug-hash="jzfqi" data-default-tab="result" class='codepen'>See the Pen <a href='http://codepen.io/trodrigues/pen/jzfqi/'>jzfqi</a> by Tiago Rodrigues (<a href='http://codepen.io/trodrigues'>@trodrigues</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
 <script async src="//codepen.io/assets/embed/ei.js"></script>
 
@@ -413,23 +414,10 @@ border: <line-width> || <line-style> || <color>;
     box-sizing: border-box;
     {% endhighlight %}
 
-    <p data-height="268" data-theme-id="0" data-slug-hash="Huqan" data-default-tab="result" class='codepen'>See the Pen <a href='http://codepen.io/trodrigues/pen/Huqan/'>Huqan</a> by Tiago Rodrigues (<a href='http://codepen.io/trodrigues'>@trodrigues</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+    <p data-height="268" data-theme-id="0" data-slug-hash="kgpyK" data-default-tab="result" class='codepen'>See the Pen <a href='http://codepen.io/bastianalbers/pen/kgpyK/'>kgpyK</a> by Bastian Albers (<a href='http://codepen.io/bastianalbers'>@bastianalbers</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
 <script async src="//codepen.io/assets/embed/ei.js"></script>
 
     <p>If you specify that, now your box will actually occupy just 80px, as the borders and paddings become part of the box. This usually makes it easier to understand, so we suggest you use it.</p>
-
-
-     <h4 id="boxmodel">The Box Model</h4>
-    <p>The Box Model is something that describes how all of these boxes behave, and how the browser knows about the space they occupy on a page.</p>
-
-    <p>We’ve told you that you can specify width, height and borders, but there’s more than that. You can also specify a <code>padding</code>, which is some space between your content and the edge of the box. And you can specify a <code>margin</code>, which is the size between the box and it's neighboring boxes.</p>
-
-    <p>Here’s an example with all of these properties so you can see how they behave. Note that the content is 5px away from the border, and that the boxes are 10px away from each other.</p>
-    <p data-height="268" data-theme-id="0" data-slug-hash="jzfqi" data-default-tab="result" class='codepen'>See the Pen <a href='http://codepen.io/trodrigues/pen/jzfqi/'>jzfqi</a> by Tiago Rodrigues (<a href='http://codepen.io/trodrigues'>@trodrigues</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
-<script async src="//codepen.io/assets/embed/ei.js"></script>
-
-    <p>And here you can see how these different properties compose a box:</p>
-    <p><img src="../images/boxmodel.png" alt=""></p>
 
     <!-- TODO need to explain shorthand before explaining the padding stuff and how much size it occupies -->
     <!--<p>Now, how much space does this box occupy on a page? We need to take into account not just the width and the height that was specified, but also the paddings and the borders (we can forget about the margins for now). So in reality, our box occupies a size of 80x plus 5px on each side for the paddings, </p>
