@@ -227,6 +227,7 @@ permalink: /learning-materials/
         <li><a href="#boxmodel">The Box Model</a></li>
         <li><a href="#hover">Hover</a></li>
         <li><a href="#classes">Class Selectors</a></li>
+        <li><a href="#transitions">Transitions</a></li>
     </ul>
 
     <h4 id="whatiscss">CSS - what is that?</h4>
@@ -504,6 +505,46 @@ div:hover {
 </body>
     {% endhighlight %}
     <p>Now here you should note several things. Both <code>div</code>s get the styles of the <code>div</code> rule, as this applies to all <code>div</code>s. Then the first <code>div</code> also gets the styles of the class <code>.greenthing</code>. In HTML the classes get assigned by writing a class <em>attribute</em> inside of the opening tag of the element. The second <code>div</code> has two classes – you can assign as many of them as you want! Just separate them by a space. In the CSS code, class selectors are marked by a dot like this: <code>.border-dotted</code>. This class is remarkable as it <code>overrides</code> the border style that was defined in the <code>div</code> selector.</p>
+
+    <h4 id="transitions">Transitions</h4>
+    <p>Transitions are a nice way to add some interactive animations to your site. If you add a transition to an element, the browser will automatically animate between two states when they change. To try that you can combine what you just learned about classes and <code>:hover</code> and add the <code>transition</code> property to the mix:
+    {% highlight html %}
+<head>
+<!-- ... -->
+<style type="text/css">
+    .changeonhover {
+        color: white;
+        background-color: green;
+        text-align: center;
+        width: 300px;
+        height: 200px;
+        font-family: sans-serif;
+        border: 5px solid black;
+        transition: 1s all;
+    }
+    .changeonhover:hover {
+        background-color: blue;
+        width: 600px;
+        height: 300px;
+    }
+</style>
+</head>
+<body>
+<div>Hover me! Hover Me!</div>
+</body>
+    {% endhighlight %}
+    <p>Notice how you did not need to define an animation but still the browser animates between the two states? All we did is insert <code>transition: 1s all;</code> which is the transition shorthand with just the first two values that are a <code>transition-duration</code> of 1 second and the <code>transition-property</code> of <code>all</code> which means the browser will animate between all properties that have changed. You could also define different transitions for different properties, separated by a comma. Let’s go a little overboard with that and also use the other transition values:</p>
+    <p data-height="268" data-theme-id="0" data-slug-hash="LKltb" data-default-tab="result" class='codepen'>See the Pen <a href='http://codepen.io/bastianalbers/pen/LKltb/'>LKltb</a> by Bastian Albers (<a href='http://codepen.io/bastianalbers'>@bastianalbers</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+<script async src="//codepen.io/assets/embed/ei.js"></script>
+    <p>Notice how we used a very complicated transition shorthand here:</p>
+    {% highlight CSS %}
+transition: 1s width 0.2s ease-out, 2s background-color, 0.5s height 0.5s;
+    {% endhighlight %}
+    <p>Let’s break it down: <code>1s width 0.2s ease-out</code> are the values that define the transition just for the width. The shorthand syntax is:</p>
+    {% highlight CSS %}
+transition: transition-duration transition-property transition-delay transition-timing-function;
+    {% endhighlight %}
+    <p>So in our example the width gets transitioned for one second, but only after a 0.2 second delay with a timing function of ease-out. And then you use a comma and define the transition for the next property if you want to. Phew, sounds complicated, right? But as you can see in the example, you don’t always need to define <em>all</em> values, as they will have default values, as the 2s background-color transition shows. Don’t worry. It’s ok to look this up every time until you remember it.</p>
 </section>
 <section id="challenges">
   <h2>Challenges: Start experimenting!</h2>
@@ -518,7 +559,7 @@ div:hover {
       <strong>The dotted circle</strong>: You already know how to apply these borders to a box, right? Now make it a circle! Hint: Look up the <code>border-radius</code> property!
     </p>
   </div>
-  
+
   <div class="challenge">
     <a class="example fancy_link" href="3">Hover me!</a>
 
@@ -526,7 +567,7 @@ div:hover {
       <strong>The fancy link</strong>: <code>border-radius</code>, <code>background-color</code>, <code>padding</code>, <code>:hover</code> … you know most of the things to create a nice looking link like this!
     </p>
   </div>
-  
+
   <div class="challenge">
     <div class="example polaroid">
       <img src="http://distilleryimage5.ak.instagram.com/22452da87ebf11e28d8c22000a1f9ad6_7.jpg" alt="Lake Tahoe" />
