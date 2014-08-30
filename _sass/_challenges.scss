@@ -81,5 +81,41 @@
   }
 }
 
+.smiley {
+  width: 80px;
+  height: 80px;
+  border: 2px solid $color_black;
+  background-color: $color_yellow;
+  position: relative;
+  border-radius: 100%;
+  .lefteye, .righteye {
+    position: absolute;
+    top: 20px;
+    width: 5px;
+    height: 5px;
+    background-color: $color_black;
+    border-radius: 100%;
+  }
+  .lefteye {
+    left: 25px;
+  }
+  .righteye {
+    right: 25px;
+  }
+  .mouth {
+    position: absolute;
+    width: 40px;
+    height: 0;
+    left: 20px;
+    bottom: 25px;
+    border-bottom: 2px solid $color_black;
+    transition: all 1s;
+  }
+  &:hover .mouth {
+    height: 20px;
+    border-radius: 50%;
+  }
+}
+
 @-webkit-keyframes rotating_star { from { -webkit-transform: rotate(0) } to { -webkit-transform: rotate(-360deg) } }
         @keyframes rotating_star { from { transform: rotate(0) } to { transform: rotate(-360deg) } }

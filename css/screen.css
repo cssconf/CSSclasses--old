@@ -1188,25 +1188,67 @@ ul {
   top: -3px;
 }
 
+/* line 84, ../_sass/_challenges.scss */
+.smiley {
+  width: 80px;
+  height: 80px;
+  border: 2px solid black;
+  background-color: #ffd075;
+  position: relative;
+  border-radius: 100%;
+}
+/* line 91, ../_sass/_challenges.scss */
+.smiley .lefteye, .smiley .righteye {
+  position: absolute;
+  top: 20px;
+  width: 5px;
+  height: 5px;
+  background-color: black;
+  border-radius: 100%;
+}
+/* line 99, ../_sass/_challenges.scss */
+.smiley .lefteye {
+  left: 25px;
+}
+/* line 102, ../_sass/_challenges.scss */
+.smiley .righteye {
+  right: 25px;
+}
+/* line 105, ../_sass/_challenges.scss */
+.smiley .mouth {
+  position: absolute;
+  width: 40px;
+  height: 0;
+  left: 20px;
+  bottom: 25px;
+  border-bottom: 2px solid black;
+  transition: all 1s;
+}
+/* line 114, ../_sass/_challenges.scss */
+.smiley:hover .mouth {
+  height: 20px;
+  border-radius: 50%;
+}
+
 @-webkit-keyframes rotating_star {
-  /* line 84, ../_sass/_challenges.scss */
+  /* line 120, ../_sass/_challenges.scss */
   from {
     -webkit-transform: rotate(0);
   }
 
-  /* line 84, ../_sass/_challenges.scss */
+  /* line 120, ../_sass/_challenges.scss */
   to {
     -webkit-transform: rotate(-360deg);
   }
 }
 
 @keyframes rotating_star {
-  /* line 85, ../_sass/_challenges.scss */
+  /* line 121, ../_sass/_challenges.scss */
   from {
     transform: rotate(0);
   }
 
-  /* line 85, ../_sass/_challenges.scss */
+  /* line 121, ../_sass/_challenges.scss */
   to {
     transform: rotate(-360deg);
   }
