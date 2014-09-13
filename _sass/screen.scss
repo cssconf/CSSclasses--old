@@ -46,6 +46,15 @@ a:hover, a:focus {
   }
 }
 
+.underline {
+  text-decoration: underline;
+}
+
+.highlight-text {
+  color: #ff6b69;
+  font-weight: bold;
+}
+
 .site-byline {
   a {
     color: $color_yellow;
@@ -101,7 +110,8 @@ a:hover, a:focus {
 
 .footer-list {
   padding: 0;
-  margin: 0;
+  margin-left: 0;
+  margin-bottom: 20px;
   li {
     margin-left: 20px;
     display: inline-block;
