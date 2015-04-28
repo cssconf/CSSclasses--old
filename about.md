@@ -21,6 +21,7 @@ CSSclasses is organized by the volunteer teams of CSSconf EU and OpenTechSchool.
 
 <ul class="team">
   <li>Max Fellmuth: <a href="https://twitter.com/maxfell">@maxfell</a> <a href="https://github.com/maxfell">@maxfell</a></li>
+  <li>Łukasz Kliś: <a href="https://twitter.com/lukaszklis">@lukaszklis</a> <a href="https://github.com/lukaszklis">@lukaszklis</a></li>
 </ul>
 
 
