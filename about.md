@@ -10,26 +10,32 @@ CSSclasses is for beginners and experts alike: Using CSS as a simple and low-bar
 
 CSSclasses is organized by the volunteer teams of CSSconf EU and OpenTechSchool.
 
-<ul class="team">
-  <li>Kristina Schneider: <a href="https://twitter.com/kriesse">@kriesse</a> <a href="https://github.com/kriesse">@kriesse</a></li>
-  <li>Bastian Albers: <a href="https://twitter.com/bastianalbers">@bastianalbers</a> <a href="https://github.com/bastianalbers">@bastianalbers</a></li>
-  <li>Kevin Lorenz: <a href="https://twitter.com/verpixelt">@verpixelt</a> <a href="https://github.com/verpixelt">@verpixelt</a></li>
-</ul>
+{% if site.data.team %}
+  <ul class="team">
+    {% for member in site.data.team %}
+      <li>{{ member.name }}: <a href="https://twitter.com/{{ member.twitter }}">@{{ member.twitter }}</a> <a href="https://github.com/{{ member.github }}">@{{ member.github }}</a></li>
+    {% endfor %}
+  </ul>
+{% endif %}
 
 
 ## Coaches
 
-<ul class="team">
-  <li>Max Fellmuth: <a href="https://twitter.com/maxfell">@maxfell</a> <a href="https://github.com/maxfell">@maxfell</a></li>
-  <li>Łukasz Kliś: <a href="https://twitter.com/lukaszklis">@lukaszklis</a> <a href="https://github.com/lukaszklis">@lukaszklis</a></li>
-  <li>Nika Zawila: <a href="https://twitter.com/nikazawila">@nikazawila</a> <a href="https://github.com/nikazawila">@nikazawila</a></li>
-  <li>Rafal Bromirski: <a href="https://twitter.com/paranoida">@paranoida</a> <a href="https://github.com/paranoida">@paranoida</a></li>
-</ul>
+{% if site.data.coaches %}
+  <ul class="team">
+    {% for coach in site.data.coaches %}
+      <li>{{ coach.name }}: <a href="https://twitter.com/{{ coach.twitter }}">@{{ coach.twitter }}</a> <a href="https://github.com/{{ coach.github }}">@{{ coach.github }}</a></li>
+    {% endfor %}
+  </ul>
+{% endif %}
 
 
 ## Alumni 2014
 
-<ul class="team">
-  <li>Jana Ahrens: <a href="https://twitter.com/plique">@plique</a> <a href="https://github.com/plique">@plique</a></li>
-  <li>Bettina Shzu-Juraschek: <a href="https://twitter.com/thatbettina">thatbettina</a> <a href="https://github.com/thatbettina">@thatbettina</a></li>
-</ul>
+{% if site.data.alumni2014 %}
+  <ul class="team">
+    {% for alumni in site.data.alumni2014 %}
+      <li>{{ alumni.name }}: <a href="https://twitter.com/{{ alumni.twitter }}">@{{ alumni.twitter }}</a> <a href="https://github.com/{{ alumni.github }}">@{{ alumni.github }}</a></li>
+    {% endfor %}
+  </ul>
+{% endif %}
