@@ -13,29 +13,27 @@ CSSclasses is organized by the volunteer teams of CSSconf EU and OpenTechSchool.
 {% if site.data.team %}
   <ul class="team">
     {% for member in site.data.team %}
-      <li>{{ member.name }}: <a href="https://twitter.com/{{ member.twitter }}">@{{ member.twitter }}</a> <a href="https://github.com/{{ member.github }}">@{{ member.github }}</a></li>
+      {% include team_item.html name=member.name twitter=member.twitter github=member.github %}
     {% endfor %}
   </ul>
 {% endif %}
-
-
-## Coaches
 
 {% if site.data.coaches %}
+## Coaches
+
   <ul class="team">
     {% for coach in site.data.coaches %}
-      <li>{{ coach.name }}: <a href="https://twitter.com/{{ coach.twitter }}">@{{ coach.twitter }}</a> <a href="https://github.com/{{ coach.github }}">@{{ coach.github }}</a></li>
+      {% include team_item.html name=coach.name twitter=coach.twitter github=coach.github %}
     {% endfor %}
   </ul>
 {% endif %}
 
-
+{% if site.data.alumni2014 %}
 ## Alumni 2014
 
-{% if site.data.alumni2014 %}
   <ul class="team">
     {% for alumni in site.data.alumni2014 %}
-      <li>{{ alumni.name }}: <a href="https://twitter.com/{{ alumni.twitter }}">@{{ alumni.twitter }}</a> <a href="https://github.com/{{ alumni.github }}">@{{ alumni.github }}</a></li>
+      {% include team_item.html name=alumni.name twitter=alumni.twitter github=alumni.github %}
     {% endfor %}
   </ul>
 {% endif %}
