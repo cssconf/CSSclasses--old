@@ -1,0 +1,9 @@
+<li>
+  {{ include.name }}
+  {% if include.twitter %}
+  <a href="https://twitter.com/{{ include.twitter }}">@{{ include.twitter }}</a>
+  {% endif %}
+  {% if include.github %}
+  <a href="https://github.com/{{ include.github }}">@{{ include.github }}</a>
+  {% endif %}
+</li>
