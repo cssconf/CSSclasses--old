@@ -81,6 +81,10 @@
   }
 }
 
+@-webkit-keyframes rotating_star { from { -webkit-transform: rotate(0) } to { -webkit-transform: rotate(-360deg) } }
+@keyframes rotating_star { from { transform: rotate(0) } to { transform: rotate(-360deg) } }
+
+
 .smiley {
   width: 80px;
   height: 80px;
@@ -117,5 +121,58 @@
   }
 }
 
-@-webkit-keyframes rotating_star { from { -webkit-transform: rotate(0) } to { -webkit-transform: rotate(-360deg) } }
-        @keyframes rotating_star { from { transform: rotate(0) } to { transform: rotate(-360deg) } }
+.laserpointer {
+  position: relative;
+  width: 200px;
+  height: 200px;
+}
+.laserpointer-topleft,
+.laserpointer-topright,
+.laserpointer-bottomleft,
+.laserpointer-bottomright {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+}
+.laserpointer-topleft {
+  top: 0;
+  left: 0;
+  background-color: #f3f3f3;
+}
+.laserpointer-topright {
+  top: 0;
+  right: 0;
+}
+.laserpointer-bottomleft {
+  bottom: 0;
+  left: 0;
+}
+.laserpointer-bottomright {
+  bottom: 0;
+  right: 0;
+  background-color: #f3f3f3;
+}
+.laserpointer-point {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  transition: 0.2s all;
+  width: 10px;
+  height: 10px;
+  border-radius: 5px;
+  background-color: red;
+}
+.laserpointer-topleft:hover ~ .laserpointer-point {
+  transform: translateX(120px) translateY(130px);
+}
+.laserpointer-topright:hover ~ .laserpointer-point {
+  transform: translateX(60px) translateY(180px);
+}
+.laserpointer-bottomleft:hover ~ .laserpointer-point {
+  transform: translateX(30px) translateY(30px);
+}
+.laserpointer-bottomright:hover ~ .laserpointer-point {
+  transform: translateX(150px) translateY(30px);
+}
+
+
