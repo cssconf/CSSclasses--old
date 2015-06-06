@@ -1,8 +1,10 @@
+
+
 body {
   margin: 0;
   padding: 0;
   font-family: 'Open Sans', sans-serif;
-  font-size: 14px;
+  font-size: 100%;
   line-height: 1.5;
   text-rendering: optimizeLegibility;
 }
@@ -14,15 +16,16 @@ button {
 }
 
 // typography
-h1 {
-  font-size: 2em;       // 2*16 = 32
-}
-h2 {
-  font-size: 1.5em;     // 1.5*16 = 24
-}
-h3 {
-  font-size: 1.17em;    // 1.17*16 = 18.72
-}
+h1,
+.alpha { font-size: 2em; } // 2*16 = 32
+
+h2,
+.beta {
+  font-size: 1.5em; }// 1.5*16 = 24
+
+h3,
+.gamma { font-size: 1.17em; }// 1.17*16 = 18.72
+
 h4 {
   font-size: 1em;       // 1*16 = 16
 }
@@ -38,32 +41,27 @@ h3, h4, h5 {
   margin-bottom: 2em;
 }
 
-p {
-  margin-bottom: 1em;
-}
+p { margin-bottom: 1em; }
 
-ul, ol {
+ul,
+ol {
   margin-top: 1em;
   margin-bottom: 1.5em;
 }
 
-.team li {
-  line-height: 1.9;
-}
+ul { padding-left: 20px; }
 
-strong, b {
-  font-weight: bold;
-}
-em, i {
-  font-style: italic;
-}
-.strike {
-  text-decoration: line-through;
-}
+.team li { line-height: 1.9; }
 
-.t-center {
-  text-align: center;
-}
+strong,
+b { font-weight: bold; }
+
+em,
+i { font-style: italic; }
+
+.strike { text-decoration: line-through; }
+
+.t-center { text-align: center; }
 
 .lead-p {
   padding-top: 2em;
@@ -72,26 +70,17 @@ em, i {
   border-top: 3px solid $color_teal;
 }
 
-ul {
-  padding-left: 20px;
-}
-.mark {
-  background-color: red;
-}
+.mark { background-color: red; }
 
 .site-title {
   font-weight: bold;
   font-size: 3em;
 }
 
-.false, .true {
-  font-weight: 600;
-}
+.false,
+.true { font-weight: 600; }
 
-.false {
-  color: red;
-}
+.false { color: red; }
 
-.true {
-  color: green;
-}
+.true { color: green; }
+
