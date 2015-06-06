@@ -228,6 +228,7 @@ permalink: /learning-materials/
         <li><a href="#hover">Hover</a></li>
         <li><a href="#classes">Class Selectors</a></li>
         <li><a href="#transitions">Transitions</a></li>
+        <li><a href="#transforms">Transforms</a></li>
     </ul>
 
     <h4 id="whatiscss">CSS - what is that?</h4>
@@ -533,6 +534,37 @@ transition: 1s width 0.2s ease-out, 2s background-color, 0.5s height 0.5s;
 transition: transition-duration transition-property transition-delay transition-timing-function;
     {% endhighlight %}
     <p>So in our example the width gets transitioned for one second, but only after a 0.2 second delay with a timing function of ease-out. And then you use a comma and define the transition for the next property if you want to. Phew, sounds complicated, right? But as you can see in the example, you don’t always need to define <em>all</em> values, as they will have default values, as the 2s background-color transition shows. Don’t worry. It’s ok to look this up every time until you remember it.</p>
+
+    <h4 id="transforms">Transforms</h4>
+    <p>Transforms can be used to manipulate elements. You can take any element and add one or many transforms to it, including <code>translate</code> (moving the element), <code>scale</code> (make it bigger/smaller), <code>skew</code> (distort the element) and many more. All these transforms happen without disturbing the rendering flow. What does that mean? If you have an element that is a 100px square and you add <code>transform: scale(2);</code> to it, it is now scaled up to be a 200px square element, but all other elements around it stay in their positions. If you would instead double width and height of your element, that could push other elements away.</p>
+    <p>Let’s go through these one by one: <code>translate</code> can be used in two different ways:</p>
+    {% highlight CSS %}
+.movedownright {
+    transform: translate(10px, 20px);
+}
+.movedownright2 {
+    transform: translateX(10px) translateY(20px);
+}
+    {% endhighlight %}
+    <p>Both classes <code>.movedownright</code> and <code>.movedownright2</code> manipulate any element in the same way: move it 10px right and 20px down. Negative values (e.g. -10px) would move it left or up. <code>.movedownright</code> uses a shorthand syntax for translateX and translateY, <code>.movedownright2</code> uses the individual <code>translateX</code> and <code>translateY</code> transforms. Notice how you can add several transforms by just leaving a space between them.</p>
+    <p><code>scale</code> can be used to scale elements up or down, where <code>transform: scale(0);</code> means the element is gone, <code>transform: scale(0.5);</code> scales it down to 50% of the original size and <code>transform: scale(2);</code> doubles the size to 200%.</p>
+
+    <p>Using <code>skew</code> or <code>skewX</code> and <code>skewY</code> you can skew your elements by given angles on the x- or y-axis. With <code>rotate</code> you can rotate your elements by a given angle.</p>
+    {% highlight CSS %}
+.skewme {
+    transform: skew(20deg, 30deg);
+}
+/* .skewme2 does the same as .skewme */
+.skewme2 {
+    transform: skewX(20deg) skewY(30deg);
+}
+.rotateme {
+    transform: rotate(30deg);
+}
+    {% endhighlight %}
+    <p>Now here is an example of using several transforms at once, but only on <code>:hover</code> when you move the cursor over an element (notice how we are very happy to use transitions again as well):</p>
+    <p data-height="268" data-theme-id="0" data-slug-hash="yNbagP" data-default-tab="result" data-user="bastianalbers" class='codepen'>See the Pen <a href='http://codepen.io/bastianalbers/pen/yNbagP/'>Basic transform example</a> by Bastian Albers (<a href='http://codepen.io/bastianalbers'>@bastianalbers</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+<script async src="//assets.codepen.io/assets/embed/ei.js"></script>
 </section>
 <section id="challenges">
   <h2>Challenges: Start experimenting!</h2>
