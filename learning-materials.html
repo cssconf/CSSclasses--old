@@ -425,7 +425,6 @@ border: <line-width> || <line-style> || <color>;
     <!--<p>Now, how much space does this box occupy on a page? We need to take into account not just the width and the height that was specified, but also the paddings and the borders (we can forget about the margins for now). So in reality, our box occupies a size of 80x plus 5px on each side for the paddings, </p>
     -->
 
-
     <h4 id="hover">Hover</h4>
     <p>Hover is a small example of how you can add some fun little interactivity to your site. Take our <code>div</code> example from above and let’s add a little bit to our CSS:</p>
     {% highlight CSS %}
@@ -537,8 +536,8 @@ transition: transition-duration transition-property transition-delay transition-
     <p>So in our example the width gets transitioned for one second, but only after a 0.2 second delay with a timing function of ease-out. And then you use a comma and define the transition for the next property if you want to. Phew, sounds complicated, right? But as you can see in the example, you don’t always need to define <em>all</em> values, as they will have default values, as the 2s background-color transition shows. Don’t worry. It’s ok to look this up every time until you remember it.</p>
 
     <h4 id="transforms">Transforms</h4>
-    <p>Transforms can be used to manipulate elements. You can take any element and add one or many transforms to it, including <code>translate</code> (moving the element), <code>scale</code> (make it bigger/smaller), <code>skew</code> (distort the element) and many more. All these transforms happen without disturbing the rendering flow. What does that mean? If you have an element that is a 100px square and you add <code>transform: scale(2);</code> to it, it is now scaled up to be a 200px square element, but all other elements around it stay in their positions. If you would instead double width and height of your element, that could push other elements away.</p>
-    <p>Let’s go through these one by one: <code>translate</code> can be used in two different ways:</p>
+    <p>Transforms can be used to manipulate elements. You can take any element and add one or many transforms to it, including <code>translate</code> (moving the element), <code>scale</code> (make it bigger/smaller), <code>skew</code> (distort the element) and many more. All these transforms happen without disturbing the rendering flow. What does that mean? If you have an element that is a 100px square and you add <code>transform: scale(2);</code> to it, it is now scaled up to be a 200px square element, but all other elements around it stay in their positions. If instead you double width and height of your element, that will push other elements away.</p>
+    <p>Let’s go through these one by one. <code>translate</code> can be used in two different ways:</p>
     {% highlight CSS %}
 .movedownright {
     transform: translate(10px, 20px);
@@ -569,15 +568,15 @@ transition: transition-duration transition-property transition-delay transition-
 
     <h4 id="moreselectors">More selectors: nth-child, nth-of-type, sibling</h4>
     <p>There are a few more selectors to select subsets out of many elements. <code>:nth-child</code>, <code>:nth-of-type</code> and the <code>~</code> sibling selector are a few common examples of css selectors that are often very useful.</p>
-    <p>The <code>:nth-child</code> is very useful if you have recurring elements that have alternating styling. Take an unordered list as an example: you want odd rows to be white, even rows to be a bit darker. So you could assign even list elements with a different styling without messing with the HTML markup in case you want to change this later. So we assign <code>li:nth-child(even) { background-color: #f3f3f3; }</code> to those list elements. instead of <code>even</code> you could also use <code>2n</code> to select any 2nd element, <code>3n</code> for every third, <code>3n-1</code> for every third but starting with the second and so on.</p>
+    <p>The <code>:nth-child</code> is very useful if you have recurring elements with alternating styling. Take an unordered list for example: You want odd rows to be white, even rows to be a bit darker. You can assign different style rules to even list elements without messing with the HTML markup – which is handy when you have to change the styles again later. All you need to do is assign <code>li:nth-child(even) { background-color: #f3f3f3; }</code> to those list elements. Instead of <code>even</code> you could also use <code>2n</code> to select any 2nd element, <code>3n</code> for every third, <code>3n-1</code> for every third but starting with the second and so on.</p>
     <p data-height="268" data-theme-id="0" data-slug-hash="ZGKBYw" data-default-tab="result" data-user="bastianalbers" class='codepen'>See the Pen <a href='http://codepen.io/bastianalbers/pen/ZGKBYw/'>ZGKBYw</a> by Bastian Albers (<a href='http://codepen.io/bastianalbers'>@bastianalbers</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
-    <p>The <code>:nth-of-type</code> works almost like the <code>:nth-child</code>. But <code>nth-child</code> doesn't care about what type the elements are. So if you would put a <code>div</code> in the middle of the list, <code>nth-child</code> would treat that just like one of the list elements. That is where <code>:nth-of-type</code> is stricter: it only executes the rule on elements of the given selector.</p>
-    <p>The <code>~</code> sibling selector selects all elements that are <em>neighbors</em> of a selected element. So if you take the following example, simple rules can add dynamic behaviour to your collection of fruits and vegetables:</p>
+    <p>The <code>:nth-of-type</code> works almost like the <code>:nth-child</code>. But <code>nth-child</code> doesn't care about what type the elements are. If you put a <code>div</code> in the middle of the list, <code>nth-child</code> will treat that just like one of the list elements. That is where <code>:nth-of-type</code> is stricter: It only executes the rule on elements of the given selector.</p>
+    <p>The <code>~</code> sibling selector selects all elements that are <em>neighbors</em> of a selected element. So if you take the following example, simple rules can add dynamic behavior to your collection of fruits and vegetables:</p>
 {% highlight CSS %}
 .vegetable-checkbox:checked ~ .vegetable { background-color: #aaf0bb; }
 .fruit-checkbox:checked ~ .fruit { background-color: #ffaabb; }
 {% endhighlight %}
-    <p>While these rules look very frightening, they are not so bad when you take them apart. The first selector <code>.vegetable-checkbox</code> looks for anything that has the class "vegetable-checkbox" in the HTML. Then by adding the <code>:checked</code> that rule only applies if it is a checkbox that is checked. Then the <code>~</code> indicates that another selector follows. This following selector in the end is our target that gets the styles in the rule if there is any element in the neighborhood that is found by the first selector.</p>
+    <p>While these rules look very complex, they are not so bad when you take them apart. The first selector <code>.vegetable-checkbox</code> looks for anything that has the class "vegetable-checkbox" in the HTML. By adding the <code>:checked</code> that rule only applies if it is a checkbox that is checked. Then the <code>~</code> indicates that another selector follows. This following selector in the end is our target that gets the styles in the rule if there is any element in the neighborhood that is found by the first selector.</p>
     <p data-height="268" data-theme-id="0" data-slug-hash="vOmyGg" data-default-tab="result" data-user="bastianalbers" class='codepen'>See the Pen <a href='http://codepen.io/bastianalbers/pen/vOmyGg/'>vOmyGg</a> by Bastian Albers (<a href='http://codepen.io/bastianalbers'>@bastianalbers</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
 
 </section>
@@ -658,29 +657,43 @@ transition: transition-duration transition-property transition-delay transition-
     <h3>Resources for self-learning and expert groups</h3>
     <p>Now you have covered most of the really basic stuff. Now it’s time to take a deep dive in some CSS field. Here’s a list of good articles and resources.</p>
 
-    <h4>Page layout</h4>
+    <h4>Layout</h4>
+
+    <p>
+      At this point, you have a solid understanding of how to color, size and even transform the elements on your web page. However, you probably would like to position these elements next to each other? And get in control of where excactly they are laid out on the page? Luckily, CSS offers a variety of approaches to control the layout of elements on your page.
+    </p>
     <ul>
-        <li><a href="http://learnlayout.com/">Learn CSS Layout</a> - this site teaches the CSS fundamentals that are used in any website’s layout.</li>
-        <li><a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/">A complete guide to Flexbox</a> – Advanced, please read about the "classic" layouting methods first.</li>
-        <li><a href="https://scotch.io/tutorials/a-visual-guide-to-css3-flexbox-properties">A visual guide to CSS3 Flexbox properties</a> – Advanced, please read about the "classic" layouting methods first.</li>
+      <li><a href="http://learnlayout.com/">learnlayout.com</a> – The topic of layout is incredibly fun, but also takes more room to explain than this workshop can cover. If you are ready to dive into it and explore how to layout with CSS, we highly recommend this tutorial. It also comes in various languages!
+    </li>
+    <li>
+      <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/">A Complete Guide to Flexbox</a> from CSS-Tricks – You have already mastered the basics of CSS layout? You understand floats, position, and even looked into responsive web design? Once you are done with all that, you should check out a more recent, but already well-supported way to build complex yet flexible layouts: Flexbox.
+    </li>
+    <li><a href="https://scotch.io/tutorials/a-visual-guide-to-css3-flexbox-properties">A Visual Guide to CSS3 Flexbox Properties</a> – Another great resource to explore and and understand how to work with Flexbox.
+    </li>
+    <li>
+      <a href="http://gridbyexample.com/">Grid by Example</a> – If you are even more adventurous and want to check out the latest and still experimental way to layout in CSS, spend some time to explore the CSS Grid Layout Module. We recommend this excellent resource by Rachel Andrew’s.
+    </li>
+
     </ul>
 
     <h4>Transitions</h4>
     <ul>
-        <li><a href="http://leaverou.github.io/animatable/">A nice gallery of transitions by Lea Verou</a></li>
+        <li><a href="http://leaverou.github.io/animatable/">A gallery of transitions by Lea Verou</a></li>
         <li><a href="https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Using_CSS_transitions">Using CSS Transitions</a></li>
     </ul>
 
     <h4>Transforms</h4>
-    <p><a href="http://www.westciv.com/tools/transforms/index.html">Transform live playground</a>, a nice way to try out the most common transform functions.</p>
-    <p><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/transform">MDN: transform</a>, explains the most common transform functions and the syntax.</p>
+      <ul>
+        <li><a href="http://www.westciv.com/tools/transforms/index.html">Transform live playground</a> – a nice way to try out the most common transform functions.</li>
+        <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/transform">MDN: transform</a> – explains the most common transform functions and the syntax.</li>
+      </ul>
 
 
     <h4>Animation</h4>
-    <p><a href="http://alexberg.in/keyframer">Keyframer by Alex Berg</a>, a tool to produce animation keyframes.</p>
+    <p><a href="http://alexberg.in/keyframer">Keyframer by Alex Berg</a> – a tool to produce animation keyframes.</p>
 
     <h4>Pseudo Classes</h4>
-    <p><a href="http://css-tricks.com/pseudo-class-selectors/">Pseudo Class Selectors</a> - good overview of all the relevant pseudo classes that can spice up your site.</p>
+    <p><a href="http://css-tricks.com/pseudo-class-selectors/">Pseudo Class Selectors</a> - Good overview of all the relevant pseudo classes that can spice up your site.</p>
 
     <h4>Typography</h4>
     <ul>
@@ -690,22 +703,21 @@ transition: transition-duration transition-property transition-delay transition-
     </ul>
 
     <h4>Responsive Web Design</h4>
-    <p><a href="http://alistapart.com/article/responsive-web-design">Responsive Web Design</a> - the classic article defining what Responsive Web Design is and how you can adapt your site to any screen size.</p>
+    <p><a href="http://alistapart.com/article/responsive-web-design">Responsive Web Design</a> - The classic article defining what Responsive Web Design is and how you can adapt your site to any screen size.</p>
 
     <h4>Architecture</h4>
     <ul>
-        <li><a href="http://cssguidelin.es/">cssguidelin.es</a> – High-level advice and guidelines for writing sane, manageable, scalable CSS</li>
-        <li><a href="http://code.tutsplus.com/tutorials/the-30-css-selectors-you-must-memorize--net-16048">The 30 CSS Selectors you Must Memorize</a></li>
-        <li><a href="http://stackoverflow.com/questions/5797014/why-do-browsers-match-css-selectors-from-right-to-left">Why do browsers match CSS selectors from right to left</a></li>
+      <li><a href="http://cssguidelin.es/">cssguidelin.es</a> – High-level advice and guidelines for writing sane, manageable, scalable CSS</li>
+      <li><a href="http://code.tutsplus.com/tutorials/the-30-css-selectors-you-must-memorize--net-16048">The 30 CSS Selectors you Must Memorize</a></li>
+      <li><a href="http://stackoverflow.com/questions/5797014/why-do-browsers-match-css-selectors-from-right-to-left">Why do browsers match CSS selectors from right to left</a></li>
     </ul>
 
     <h4>General Resources</h4>
-    <p><a href="http://www.w3.org/TR/html5/">The official HTML5 spec</a> - well, almost. But if they ever make an official specification of what HTML5 is, this is the W3C Candidate Recommendation. Now don’t be scared of what i just wrote. If you really want to know how something is defined, go here and read up.</p>
-    <p><a href="http://www.w3.org/standards/techs/css#w3c_all">The official CSS3 stuff</a> - sorry for the sloppy title, but unlike HTML5, CSS3 can’t be defined in just one big document. It consists of a lot of puzzle pieces called modules that each define some specific subset of css properties. Again, don’t be afraid to have a look at this at some point (it’s ok if that point is somewhere in the future), even if it seems overly technical.</p>
+    <p><a href="http://www.w3.org/TR/html5/">The official HTML5 Specification</a> - Well, almost. But if they ever make an official specification of what HTML5 is, this is the W3C Candidate Recommendation. If you really want to know how something is defined, go here and read up.</p>
+    <p><a href="http://www.w3.org/standards/techs/css#w3c_all">The official CSS3 *stuff*</a> - Unlike HTML5, CSS3 is not defined in one big specification. It consists of a lot of puzzle pieces called modules that each define a specific subset of CSS properties. Again, don’t be afraid to have a look at this at some point (it’s ok if that point is somewhere in the future), even if it seems overly technical at first.</p>
     <p><a href="https://developer.mozilla.org/en-US/docs/Web/CSS">Mozilla Developer Network CSS Portal</a></p>
     <ul>
-        <li><a href="http://caniuse.com/">caniuse</a>
-        "Can I use" provides up-to-date browser support tables for support of front-end web technologies on desktop and mobile web browsers.</li>
+        <li><a href="http://caniuse.com/">caniuse</a> – Can I use provides up-to-date browser support tables for support of front-end web technologies on desktop and mobile web browsers.</li>
         <li><a href="http://devdocs.io/css">Search the CSS reference</a></li>
         <li><a href="http://devdocs.io/html">Search the HTML reference</a></li>
     </ul>
