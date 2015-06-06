@@ -1,4 +1,7 @@
+
+
 .site-nav {
+  @include uppercase;
   position: fixed;
   top: 0;
   width: 100%;
@@ -7,34 +10,34 @@
   text-align: center;
   font-size: 0.83em;
   z-index: 2;
-  @include uppercase;
+
   a {
     display: inline-block;
     padding: .5em 1em;
     border: 0;
   }
+
   @media screen and (min-width: 42.5em) {
     min-height: none;
     padding: 7px 0;
   }
 }
 
-.lvwp {
-  display: none;
-}
+.lvwp { display: none; }
 
 .svwp {
   display: block;
   position: fixed;
   width: 100%;
   top: 0;
-  .svwp__wrap {
-    display: none;
-  }
+
+  .svwp__wrap { display: none; }
+
   .page-link {
     padding-top: .5em;
     padding-bottom: .5em;
   }
+
   .toggle {
     position: relative;
     padding-left: 1.25em;
@@ -48,6 +51,7 @@
     top: 3px;
     width: 40px;
     height: 40px;
+
     &:before {
       content: "";
       position: absolute;
@@ -58,21 +62,17 @@
       border-bottom: 12px double #fff;
       border-top: 4px solid #fff;
     }
-    &.expanded + .svwp__wrap .page-link:last-child {
-      margin-bottom: 5px;
-    }
+
+    &.expanded + .svwp__wrap .page-link:last-child { margin-bottom: 5px; }
   }
-  .page-link {
-    display: block;
-  }
+
+  .page-link { display: block; }
 }
 
 @media screen and (min-width: 42.5em) {
-  .svwp {
-    display: none;
-  }
-  .lvwp {
-    display: block;
-  }
+
+  .svwp { display: none; }
+
+  .lvwp { display: block; }
 }
 

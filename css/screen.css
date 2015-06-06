@@ -438,387 +438,387 @@ th {
   padding: 0;
 }
 
-/* line 1, ../_sass/_pygments.scss */
+/* line 3, ../_sass/_pygments.scss */
 .hll {
   background-color: #ffffcc;
 }
 
-/* line 2, ../_sass/_pygments.scss */
+/* line 4, ../_sass/_pygments.scss */
 .c {
   color: #408080;
   font-style: italic;
 }
 
 /* Comment */
-/* line 3, ../_sass/_pygments.scss */
+/* line 5, ../_sass/_pygments.scss */
 .err {
   border: 1px solid #FF0000;
 }
 
 /* Error */
-/* line 4, ../_sass/_pygments.scss */
+/* line 6, ../_sass/_pygments.scss */
 .k {
   color: #008000;
   font-weight: bold;
 }
 
 /* Keyword */
-/* line 5, ../_sass/_pygments.scss */
+/* line 7, ../_sass/_pygments.scss */
 .o {
   color: #666666;
 }
 
 /* Operator */
-/* line 6, ../_sass/_pygments.scss */
+/* line 8, ../_sass/_pygments.scss */
 .cm {
   color: #408080;
   font-style: italic;
 }
 
 /* Comment.Multiline */
-/* line 7, ../_sass/_pygments.scss */
+/* line 9, ../_sass/_pygments.scss */
 .cp {
   color: #BC7A00;
 }
 
 /* Comment.Preproc */
-/* line 8, ../_sass/_pygments.scss */
+/* line 10, ../_sass/_pygments.scss */
 .c1 {
   color: #408080;
   font-style: italic;
 }
 
 /* Comment.Single */
-/* line 9, ../_sass/_pygments.scss */
+/* line 11, ../_sass/_pygments.scss */
 .cs {
   color: #408080;
   font-style: italic;
 }
 
 /* Comment.Special */
-/* line 10, ../_sass/_pygments.scss */
+/* line 12, ../_sass/_pygments.scss */
 .gd {
   color: #A00000;
 }
 
 /* Generic.Deleted */
-/* line 11, ../_sass/_pygments.scss */
+/* line 13, ../_sass/_pygments.scss */
 .ge {
   font-style: italic;
 }
 
 /* Generic.Emph */
-/* line 12, ../_sass/_pygments.scss */
+/* line 14, ../_sass/_pygments.scss */
 .gr {
   color: #FF0000;
 }
 
 /* Generic.Error */
-/* line 13, ../_sass/_pygments.scss */
+/* line 15, ../_sass/_pygments.scss */
 .gh {
   color: #000080;
   font-weight: bold;
 }
 
 /* Generic.Heading */
-/* line 14, ../_sass/_pygments.scss */
+/* line 16, ../_sass/_pygments.scss */
 .gi {
   color: #00A000;
 }
 
 /* Generic.Inserted */
-/* line 15, ../_sass/_pygments.scss */
+/* line 17, ../_sass/_pygments.scss */
 .go {
   color: #888888;
 }
 
 /* Generic.Output */
-/* line 16, ../_sass/_pygments.scss */
+/* line 18, ../_sass/_pygments.scss */
 .gp {
   color: #000080;
   font-weight: bold;
 }
 
 /* Generic.Prompt */
-/* line 17, ../_sass/_pygments.scss */
+/* line 19, ../_sass/_pygments.scss */
 .gs {
   font-weight: bold;
 }
 
 /* Generic.Strong */
-/* line 18, ../_sass/_pygments.scss */
+/* line 20, ../_sass/_pygments.scss */
 .gu {
   color: #800080;
   font-weight: bold;
 }
 
 /* Generic.Subheading */
-/* line 19, ../_sass/_pygments.scss */
+/* line 21, ../_sass/_pygments.scss */
 .gt {
   color: #0044DD;
 }
 
 /* Generic.Traceback */
-/* line 20, ../_sass/_pygments.scss */
+/* line 22, ../_sass/_pygments.scss */
 .kc {
   color: #008000;
   font-weight: bold;
 }
 
 /* Keyword.Constant */
-/* line 21, ../_sass/_pygments.scss */
+/* line 23, ../_sass/_pygments.scss */
 .kd {
   color: #008000;
   font-weight: bold;
 }
 
 /* Keyword.Declaration */
-/* line 22, ../_sass/_pygments.scss */
+/* line 24, ../_sass/_pygments.scss */
 .kn {
   color: #008000;
   font-weight: bold;
 }
 
 /* Keyword.Namespace */
-/* line 23, ../_sass/_pygments.scss */
+/* line 25, ../_sass/_pygments.scss */
 .kp {
   color: #008000;
 }
 
 /* Keyword.Pseudo */
-/* line 24, ../_sass/_pygments.scss */
+/* line 26, ../_sass/_pygments.scss */
 .kr {
   color: #008000;
   font-weight: bold;
 }
 
 /* Keyword.Reserved */
-/* line 25, ../_sass/_pygments.scss */
+/* line 27, ../_sass/_pygments.scss */
 .kt {
   color: #B00040;
 }
 
 /* Keyword.Type */
-/* line 26, ../_sass/_pygments.scss */
+/* line 28, ../_sass/_pygments.scss */
 .m {
   color: #666666;
 }
 
 /* Literal.Number */
-/* line 27, ../_sass/_pygments.scss */
+/* line 29, ../_sass/_pygments.scss */
 .s {
   color: #BA2121;
 }
 
 /* Literal.String */
-/* line 28, ../_sass/_pygments.scss */
+/* line 30, ../_sass/_pygments.scss */
 .na {
   color: #7D9029;
 }
 
 /* Name.Attribute */
-/* line 29, ../_sass/_pygments.scss */
+/* line 31, ../_sass/_pygments.scss */
 .nb {
   color: #008000;
 }
 
 /* Name.Builtin */
-/* line 30, ../_sass/_pygments.scss */
+/* line 32, ../_sass/_pygments.scss */
 .nc {
   color: #0000FF;
   font-weight: bold;
 }
 
 /* Name.Class */
-/* line 31, ../_sass/_pygments.scss */
+/* line 33, ../_sass/_pygments.scss */
 .no {
   color: #880000;
 }
 
 /* Name.Constant */
-/* line 32, ../_sass/_pygments.scss */
+/* line 34, ../_sass/_pygments.scss */
 .nd {
   color: #AA22FF;
 }
 
 /* Name.Decorator */
-/* line 33, ../_sass/_pygments.scss */
+/* line 35, ../_sass/_pygments.scss */
 .ni {
   color: #999999;
   font-weight: bold;
 }
 
 /* Name.Entity */
-/* line 34, ../_sass/_pygments.scss */
+/* line 36, ../_sass/_pygments.scss */
 .ne {
   color: #D2413A;
   font-weight: bold;
 }
 
 /* Name.Exception */
-/* line 35, ../_sass/_pygments.scss */
+/* line 37, ../_sass/_pygments.scss */
 .nf {
   color: #0000FF;
 }
 
 /* Name.Function */
-/* line 36, ../_sass/_pygments.scss */
+/* line 38, ../_sass/_pygments.scss */
 .nl {
   color: #A0A000;
 }
 
 /* Name.Label */
-/* line 37, ../_sass/_pygments.scss */
+/* line 39, ../_sass/_pygments.scss */
 .nn {
   color: #0000FF;
   font-weight: bold;
 }
 
 /* Name.Namespace */
-/* line 38, ../_sass/_pygments.scss */
+/* line 40, ../_sass/_pygments.scss */
 .nt {
   color: #008000;
   font-weight: bold;
 }
 
 /* Name.Tag */
-/* line 39, ../_sass/_pygments.scss */
+/* line 41, ../_sass/_pygments.scss */
 .nv {
   color: #19177C;
 }
 
 /* Name.Variable */
-/* line 40, ../_sass/_pygments.scss */
+/* line 42, ../_sass/_pygments.scss */
 .ow {
   color: #AA22FF;
   font-weight: bold;
 }
 
 /* Operator.Word */
-/* line 41, ../_sass/_pygments.scss */
+/* line 43, ../_sass/_pygments.scss */
 .w {
   color: #bbbbbb;
 }
 
 /* Text.Whitespace */
-/* line 42, ../_sass/_pygments.scss */
+/* line 44, ../_sass/_pygments.scss */
 .mf {
   color: #666666;
 }
 
 /* Literal.Number.Float */
-/* line 43, ../_sass/_pygments.scss */
+/* line 45, ../_sass/_pygments.scss */
 .mh {
   color: #666666;
 }
 
 /* Literal.Number.Hex */
-/* line 44, ../_sass/_pygments.scss */
+/* line 46, ../_sass/_pygments.scss */
 .mi {
   color: #666666;
 }
 
 /* Literal.Number.Integer */
-/* line 45, ../_sass/_pygments.scss */
+/* line 47, ../_sass/_pygments.scss */
 .mo {
   color: #666666;
 }
 
 /* Literal.Number.Oct */
-/* line 46, ../_sass/_pygments.scss */
+/* line 48, ../_sass/_pygments.scss */
 .sb {
   color: #BA2121;
 }
 
 /* Literal.String.Backtick */
-/* line 47, ../_sass/_pygments.scss */
+/* line 49, ../_sass/_pygments.scss */
 .sc {
   color: #BA2121;
 }
 
 /* Literal.String.Char */
-/* line 48, ../_sass/_pygments.scss */
+/* line 50, ../_sass/_pygments.scss */
 .sd {
   color: #BA2121;
   font-style: italic;
 }
 
 /* Literal.String.Doc */
-/* line 49, ../_sass/_pygments.scss */
+/* line 51, ../_sass/_pygments.scss */
 .s2 {
   color: #BA2121;
 }
 
 /* Literal.String.Double */
-/* line 50, ../_sass/_pygments.scss */
+/* line 52, ../_sass/_pygments.scss */
 .se {
   color: #BB6622;
   font-weight: bold;
 }
 
 /* Literal.String.Escape */
-/* line 51, ../_sass/_pygments.scss */
+/* line 53, ../_sass/_pygments.scss */
 .sh {
   color: #BA2121;
 }
 
 /* Literal.String.Heredoc */
-/* line 52, ../_sass/_pygments.scss */
+/* line 54, ../_sass/_pygments.scss */
 .si {
   color: #BB6688;
   font-weight: bold;
 }
 
 /* Literal.String.Interpol */
-/* line 53, ../_sass/_pygments.scss */
+/* line 55, ../_sass/_pygments.scss */
 .sx {
   color: #008000;
 }
 
 /* Literal.String.Other */
-/* line 54, ../_sass/_pygments.scss */
+/* line 56, ../_sass/_pygments.scss */
 .sr {
   color: #BB6688;
 }
 
 /* Literal.String.Regex */
-/* line 55, ../_sass/_pygments.scss */
+/* line 57, ../_sass/_pygments.scss */
 .s1 {
   color: #BA2121;
 }
 
 /* Literal.String.Single */
-/* line 56, ../_sass/_pygments.scss */
+/* line 58, ../_sass/_pygments.scss */
 .ss {
   color: #19177C;
 }
 
 /* Literal.String.Symbol */
-/* line 57, ../_sass/_pygments.scss */
+/* line 59, ../_sass/_pygments.scss */
 .bp {
   color: #008000;
 }
 
 /* Name.Builtin.Pseudo */
-/* line 58, ../_sass/_pygments.scss */
+/* line 60, ../_sass/_pygments.scss */
 .vc {
   color: #19177C;
 }
 
 /* Name.Variable.Class */
-/* line 59, ../_sass/_pygments.scss */
+/* line 61, ../_sass/_pygments.scss */
 .vg {
   color: #19177C;
 }
 
 /* Name.Variable.Global */
-/* line 60, ../_sass/_pygments.scss */
+/* line 62, ../_sass/_pygments.scss */
 .vi {
   color: #19177C;
 }
 
 /* Name.Variable.Instance */
-/* line 61, ../_sass/_pygments.scss */
+/* line 63, ../_sass/_pygments.scss */
 .il {
   color: #666666;
 }
@@ -957,7 +957,7 @@ i {
   color: green;
 }
 
-/* line 1, ../_sass/_parallax.scss */
+/* line 3, ../_sass/_parallax.scss */
 .parallax {
   height: 100vh;
   overflow-x: hidden;
@@ -967,7 +967,7 @@ i {
   padding-top: 42px;
 }
 
-/* line 10, ../_sass/_parallax.scss */
+/* line 12, ../_sass/_parallax.scss */
 .parallax__layer {
   position: absolute;
   top: 0;
@@ -979,7 +979,7 @@ i {
   background-position: 50% 0;
 }
 
-/* line 21, ../_sass/_parallax.scss */
+/* line 23, ../_sass/_parallax.scss */
 .parallax__layer--level1 {
   top: -9.5vh;
   z-index: 3;
@@ -988,7 +988,7 @@ i {
   background-image: url(../images/layer1.svg);
 }
 
-/* line 29, ../_sass/_parallax.scss */
+/* line 31, ../_sass/_parallax.scss */
 .parallax__layer--level2 {
   top: -24vh;
   z-index: 2;
@@ -997,7 +997,7 @@ i {
   background-image: url(../images/layer2.svg);
 }
 
-/* line 37, ../_sass/_parallax.scss */
+/* line 39, ../_sass/_parallax.scss */
 .parallax__layer--level3 {
   top: -38vh;
   z-index: 1;
@@ -1007,8 +1007,10 @@ i {
   background-position: 33% 18%;
 }
 
-/* line 1, ../_sass/_nav.scss */
+/* line 3, ../_sass/_nav.scss */
 .site-nav {
+  text-transform: uppercase;
+  letter-spacing: .025em;
   position: fixed;
   top: 0;
   width: 100%;
@@ -1017,45 +1019,43 @@ i {
   text-align: center;
   font-size: 0.83em;
   z-index: 2;
-  text-transform: uppercase;
-  letter-spacing: .025em;
 }
-/* line 11, ../_sass/_nav.scss */
+/* line 14, ../_sass/_nav.scss */
 .site-nav a {
   display: inline-block;
   padding: .5em 1em;
   border: 0;
 }
 @media screen and (min-width: 42.5em) {
-  /* line 1, ../_sass/_nav.scss */
+  /* line 3, ../_sass/_nav.scss */
   .site-nav {
     min-height: none;
     padding: 7px 0;
   }
 }
 
-/* line 22, ../_sass/_nav.scss */
+/* line 26, ../_sass/_nav.scss */
 .lvwp {
   display: none;
 }
 
-/* line 26, ../_sass/_nav.scss */
+/* line 28, ../_sass/_nav.scss */
 .svwp {
   display: block;
   position: fixed;
   width: 100%;
   top: 0;
 }
-/* line 31, ../_sass/_nav.scss */
+/* line 34, ../_sass/_nav.scss */
 .svwp .svwp__wrap {
   display: none;
 }
-/* line 34, ../_sass/_nav.scss */
+/* line 36, ../_sass/_nav.scss */
 .svwp .page-link {
   padding-top: .5em;
   padding-bottom: .5em;
 }
-/* line 38, ../_sass/_nav.scss */
+/* line 41, ../_sass/_nav.scss */
 .svwp .toggle {
   position: relative;
   padding-left: 1.25em;
@@ -1070,7 +1070,7 @@ i {
   width: 40px;
   height: 40px;
 }
-/* line 51, ../_sass/_nav.scss */
+/* line 55, ../_sass/_nav.scss */
 .svwp .toggle:before {
   content: "";
   position: absolute;
@@ -1081,27 +1081,27 @@ i {
   border-bottom: 12px double #fff;
   border-top: 4px solid #fff;
 }
-/* line 61, ../_sass/_nav.scss */
+/* line 66, ../_sass/_nav.scss */
 .svwp .toggle.expanded + .svwp__wrap .page-link:last-child {
   margin-bottom: 5px;
 }
-/* line 65, ../_sass/_nav.scss */
+/* line 69, ../_sass/_nav.scss */
 .svwp .page-link {
   display: block;
 }
 
 @media screen and (min-width: 42.5em) {
-  /* line 71, ../_sass/_nav.scss */
+  /* line 74, ../_sass/_nav.scss */
   .svwp {
     display: none;
   }
 
-  /* line 74, ../_sass/_nav.scss */
+  /* line 76, ../_sass/_nav.scss */
   .lvwp {
     display: block;
   }
 }
-/* line 2, ../_sass/_challenges.scss */
+/* line 3, ../_sass/_challenges.scss */
 .challenge {
   clear: both;
   margin-top: 1em;
@@ -1109,13 +1109,13 @@ i {
   border-top: 1px solid #67c4b3;
 }
 
-/* line 9, ../_sass/_challenges.scss */
+/* line 10, ../_sass/_challenges.scss */
 .example {
   float: right;
   margin: 0 1em 1em 2em;
 }
 
-/* line 14, ../_sass/_challenges.scss */
+/* line 15, ../_sass/_challenges.scss */
 .dotted_circle {
   width: 80px;
   height: 80px;
@@ -1123,45 +1123,45 @@ i {
   border-radius: 50%;
 }
 
-/* line 21, ../_sass/_challenges.scss */
+/* line 22, ../_sass/_challenges.scss */
 .fancy_link {
   display: block;
   margin-top: 2.5em;
-  padding: 2px 15px;
-  border-radius: 15px;
+  padding: .125rem .9375rem;
+  border-radius: .9375rem;
   background: #376184;
-  font-size: 12px;
+  font-size: .75rem;
   font-weight: bold;
-  color: #FFF;
+  color: #fff;
   text-decoration: none;
 }
-/* line 31, ../_sass/_challenges.scss */
+/* line 33, ../_sass/_challenges.scss */
 .fancy_link:hover {
   background: #ff6b69;
 }
 
 /* line 36, ../_sass/_challenges.scss */
 .polaroid {
-  padding: 12px 12px 32px;
-  background: #FFF;
-  box-shadow: 5px 5px 10px black;
+  padding: .75rem .75rem 2rem;
+  background: #fff;
+  box-shadow: .3125rem .3125rem .625rem black;
 }
-/* line 40, ../_sass/_challenges.scss */
+/* line 41, ../_sass/_challenges.scss */
 .polaroid img {
   max-width: 140px;
   height: auto;
   margin: 0;
 }
 
-/* line 47, ../_sass/_challenges.scss */
+/* line 48, ../_sass/_challenges.scss */
 .galaxy {
-  width: 80px;
-  height: 80px;
+  width: 5rem;
+  height: 5rem;
   border: 2px solid #67c4b3;
   position: relative;
   border-radius: 100%;
 }
-/* line 53, ../_sass/_challenges.scss */
+/* line 55, ../_sass/_challenges.scss */
 .galaxy .rotation_axis {
   position: absolute;
   left: 50%;
@@ -1173,12 +1173,13 @@ i {
   -webkit-animation: rotating_star 2.5s linear infinite;
   animation: rotating_star 2.5s linear infinite;
 }
-/* line 64, ../_sass/_challenges.scss */
-.galaxy .sun, .galaxy .star {
+/* line 67, ../_sass/_challenges.scss */
+.galaxy .sun,
+.galaxy .star {
   border-radius: 100%;
   position: absolute;
 }
-/* line 68, ../_sass/_challenges.scss */
+/* line 73, ../_sass/_challenges.scss */
 .galaxy .sun {
   width: 16px;
   height: 16px;
@@ -1186,7 +1187,7 @@ i {
   top: -8px;
   background: #ffd075;
 }
-/* line 75, ../_sass/_challenges.scss */
+/* line 81, ../_sass/_challenges.scss */
 .galaxy .star {
   width: 10px;
   height: 10px;
@@ -1211,7 +1212,7 @@ i {
     transform: rotate(-360deg);
   }
 }
-/* line 88, ../_sass/_challenges.scss */
+/* line 95, ../_sass/_challenges.scss */
 .smiley {
   width: 80px;
   height: 80px;
@@ -1220,8 +1221,9 @@ i {
   position: relative;
   border-radius: 100%;
 }
-/* line 95, ../_sass/_challenges.scss */
-.smiley .lefteye, .smiley .righteye {
+/* line 103, ../_sass/_challenges.scss */
+.smiley .lefteye,
+.smiley .righteye {
   position: absolute;
   top: 20px;
   width: 5px;
@@ -1229,15 +1231,15 @@ i {
   background-color: #000000;
   border-radius: 100%;
 }
-/* line 103, ../_sass/_challenges.scss */
+/* line 113, ../_sass/_challenges.scss */
 .smiley .lefteye {
   left: 25px;
 }
-/* line 106, ../_sass/_challenges.scss */
+/* line 115, ../_sass/_challenges.scss */
 .smiley .righteye {
   right: 25px;
 }
-/* line 109, ../_sass/_challenges.scss */
+/* line 117, ../_sass/_challenges.scss */
 .smiley .mouth {
   position: absolute;
   width: 40px;
@@ -1247,20 +1249,21 @@ i {
   border-bottom: 2px solid #000000;
   transition: all 1s;
 }
-/* line 118, ../_sass/_challenges.scss */
-.smiley:hover .mouth {
+/* line 127, ../_sass/_challenges.scss */
+.smiley:hover
+.mouth {
   height: 20px;
   border-radius: 50%;
 }
 
-/* line 124, ../_sass/_challenges.scss */
+/* line 134, ../_sass/_challenges.scss */
 .laserpointer {
   position: relative;
   width: 200px;
   height: 200px;
 }
 
-/* line 129, ../_sass/_challenges.scss */
+/* line 140, ../_sass/_challenges.scss */
 .laserpointer-topleft,
 .laserpointer-topright,
 .laserpointer-bottomleft,
@@ -1270,33 +1273,33 @@ i {
   height: 100px;
 }
 
-/* line 137, ../_sass/_challenges.scss */
+/* line 149, ../_sass/_challenges.scss */
 .laserpointer-topleft {
   top: 0;
   left: 0;
   background-color: #f3f3f3;
 }
 
-/* line 142, ../_sass/_challenges.scss */
+/* line 155, ../_sass/_challenges.scss */
 .laserpointer-topright {
   top: 0;
   right: 0;
 }
 
-/* line 146, ../_sass/_challenges.scss */
+/* line 160, ../_sass/_challenges.scss */
 .laserpointer-bottomleft {
   bottom: 0;
   left: 0;
 }
 
-/* line 150, ../_sass/_challenges.scss */
+/* line 165, ../_sass/_challenges.scss */
 .laserpointer-bottomright {
   bottom: 0;
   right: 0;
   background-color: #f3f3f3;
 }
 
-/* line 155, ../_sass/_challenges.scss */
+/* line 171, ../_sass/_challenges.scss */
 .laserpointer-point {
   position: absolute;
   top: 10px;
@@ -1308,22 +1311,22 @@ i {
   background-color: red;
 }
 
-/* line 165, ../_sass/_challenges.scss */
+/* line 182, ../_sass/_challenges.scss */
 .laserpointer-topleft:hover ~ .laserpointer-point {
   transform: translateX(120px) translateY(130px);
 }
 
-/* line 168, ../_sass/_challenges.scss */
+/* line 184, ../_sass/_challenges.scss */
 .laserpointer-topright:hover ~ .laserpointer-point {
   transform: translateX(60px) translateY(180px);
 }
 
-/* line 171, ../_sass/_challenges.scss */
+/* line 186, ../_sass/_challenges.scss */
 .laserpointer-bottomleft:hover ~ .laserpointer-point {
   transform: translateX(30px) translateY(30px);
 }
 
-/* line 174, ../_sass/_challenges.scss */
+/* line 188, ../_sass/_challenges.scss */
 .laserpointer-bottomright:hover ~ .laserpointer-point {
   transform: translateX(150px) translateY(30px);
 }

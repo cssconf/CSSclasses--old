@@ -1,4 +1,5 @@
 
+
 .challenge {
   clear: both;
   margin-top: 1em;
@@ -21,22 +22,22 @@
 .fancy_link {
   display: block;
   margin-top: 2.5em;
-  padding: 2px 15px;
-  border-radius: 15px;
+  padding: .125rem .9375rem;
+  border-radius: .9375rem;
   background: $color_blue;
-  font-size: 12px;
+  font-size: .75rem;
   font-weight: bold;
-  color: #FFF;
+  color: #fff;
   text-decoration: none;
-  &:hover {
-    background: $color_red;
-  }
+
+  &:hover { background: $color_red; }
 }
 
 .polaroid {
-  padding: 12px 12px 32px;
-  background: #FFF;
-  box-shadow: 5px 5px 10px black;
+  padding: .75rem .75rem 2rem;
+  background: #fff;
+  box-shadow: .3125rem .3125rem .625rem black;
+
   img {
     max-width: 140px;
     height: auto;
@@ -45,11 +46,12 @@
 }
 
 .galaxy {
-  width: 80px;
-  height: 80px;
+  width: 5rem;
+  height: 5rem;
   border: 2px solid $color_teal;
   position: relative;
   border-radius: 100%;
+
   .rotation_axis {
     position: absolute;
     left: 50%;
@@ -61,10 +63,13 @@
     -webkit-animation: rotating_star 2.5s linear infinite;
             animation: rotating_star 2.5s linear infinite;
   }
-  .sun, .star {
+
+  .sun,
+  .star {
     border-radius: 100%;
     position: absolute;
   }
+
   .sun {
     width: 16px;
     height: 16px;
@@ -72,6 +77,7 @@
     top: -8px;
     background: $color_yellow;
   }
+
   .star {
     width: 10px;
     height: 10px;
@@ -82,6 +88,7 @@
 }
 
 @-webkit-keyframes rotating_star { from { -webkit-transform: rotate(0) } to { -webkit-transform: rotate(-360deg) } }
+
 @keyframes rotating_star { from { transform: rotate(0) } to { transform: rotate(-360deg) } }
 
 
@@ -92,7 +99,9 @@
   background-color: $color_yellow;
   position: relative;
   border-radius: 100%;
-  .lefteye, .righteye {
+
+  .lefteye,
+  .righteye {
     position: absolute;
     top: 20px;
     width: 5px;
@@ -100,12 +109,11 @@
     background-color: $color_black;
     border-radius: 100%;
   }
-  .lefteye {
-    left: 25px;
-  }
-  .righteye {
-    right: 25px;
-  }
+
+  .lefteye { left: 25px; }
+
+  .righteye { right: 25px; }
+
   .mouth {
     position: absolute;
     width: 40px;
@@ -115,7 +123,9 @@
     border-bottom: 2px solid $color_black;
     transition: all 1s;
   }
-  &:hover .mouth {
+
+  &:hover
+  .mouth {
     height: 20px;
     border-radius: 50%;
   }
@@ -126,6 +136,7 @@
   width: 200px;
   height: 200px;
 }
+
 .laserpointer-topleft,
 .laserpointer-topright,
 .laserpointer-bottomleft,
@@ -134,24 +145,29 @@
   width: 100px;
   height: 100px;
 }
+
 .laserpointer-topleft {
   top: 0;
   left: 0;
   background-color: #f3f3f3;
 }
+
 .laserpointer-topright {
   top: 0;
   right: 0;
 }
+
 .laserpointer-bottomleft {
   bottom: 0;
   left: 0;
 }
+
 .laserpointer-bottomright {
   bottom: 0;
   right: 0;
   background-color: #f3f3f3;
 }
+
 .laserpointer-point {
   position: absolute;
   top: 10px;
@@ -162,17 +178,13 @@
   border-radius: 5px;
   background-color: red;
 }
-.laserpointer-topleft:hover ~ .laserpointer-point {
-  transform: translateX(120px) translateY(130px);
-}
-.laserpointer-topright:hover ~ .laserpointer-point {
-  transform: translateX(60px) translateY(180px);
-}
-.laserpointer-bottomleft:hover ~ .laserpointer-point {
-  transform: translateX(30px) translateY(30px);
-}
-.laserpointer-bottomright:hover ~ .laserpointer-point {
-  transform: translateX(150px) translateY(30px);
-}
+
+.laserpointer-topleft:hover ~ .laserpointer-point { transform: translateX(120px) translateY(130px); }
+
+.laserpointer-topright:hover ~ .laserpointer-point { transform: translateX(60px) translateY(180px); }
+
+.laserpointer-bottomleft:hover ~ .laserpointer-point { transform: translateX(30px) translateY(30px); }
+
+.laserpointer-bottomright:hover ~ .laserpointer-point { transform: translateX(150px) translateY(30px); }
 
 
