@@ -1190,48 +1190,6 @@ ul {
   top: -3px;
 }
 
-/* line 84, ../_sass/_challenges.scss */
-.smiley {
-  width: 80px;
-  height: 80px;
-  border: 2px solid #000000;
-  background-color: #ffd075;
-  position: relative;
-  border-radius: 100%;
-}
-/* line 91, ../_sass/_challenges.scss */
-.smiley .lefteye, .smiley .righteye {
-  position: absolute;
-  top: 20px;
-  width: 5px;
-  height: 5px;
-  background-color: #000000;
-  border-radius: 100%;
-}
-/* line 99, ../_sass/_challenges.scss */
-.smiley .lefteye {
-  left: 25px;
-}
-/* line 102, ../_sass/_challenges.scss */
-.smiley .righteye {
-  right: 25px;
-}
-/* line 105, ../_sass/_challenges.scss */
-.smiley .mouth {
-  position: absolute;
-  width: 40px;
-  height: 0;
-  left: 20px;
-  bottom: 25px;
-  border-bottom: 2px solid #000000;
-  transition: all 1s;
-}
-/* line 114, ../_sass/_challenges.scss */
-.smiley:hover .mouth {
-  height: 20px;
-  border-radius: 50%;
-}
-
 @-webkit-keyframes rotating_star {
   from {
     -webkit-transform: rotate(0);
@@ -1248,6 +1206,123 @@ ul {
     transform: rotate(-360deg);
   }
 }
+/* line 88, ../_sass/_challenges.scss */
+.smiley {
+  width: 80px;
+  height: 80px;
+  border: 2px solid #000000;
+  background-color: #ffd075;
+  position: relative;
+  border-radius: 100%;
+}
+/* line 95, ../_sass/_challenges.scss */
+.smiley .lefteye, .smiley .righteye {
+  position: absolute;
+  top: 20px;
+  width: 5px;
+  height: 5px;
+  background-color: #000000;
+  border-radius: 100%;
+}
+/* line 103, ../_sass/_challenges.scss */
+.smiley .lefteye {
+  left: 25px;
+}
+/* line 106, ../_sass/_challenges.scss */
+.smiley .righteye {
+  right: 25px;
+}
+/* line 109, ../_sass/_challenges.scss */
+.smiley .mouth {
+  position: absolute;
+  width: 40px;
+  height: 0;
+  left: 20px;
+  bottom: 25px;
+  border-bottom: 2px solid #000000;
+  transition: all 1s;
+}
+/* line 118, ../_sass/_challenges.scss */
+.smiley:hover .mouth {
+  height: 20px;
+  border-radius: 50%;
+}
+
+/* line 124, ../_sass/_challenges.scss */
+.laserpointer {
+  position: relative;
+  width: 200px;
+  height: 200px;
+}
+
+/* line 129, ../_sass/_challenges.scss */
+.laserpointer-topleft,
+.laserpointer-topright,
+.laserpointer-bottomleft,
+.laserpointer-bottomright {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+}
+
+/* line 137, ../_sass/_challenges.scss */
+.laserpointer-topleft {
+  top: 0;
+  left: 0;
+  background-color: #f3f3f3;
+}
+
+/* line 142, ../_sass/_challenges.scss */
+.laserpointer-topright {
+  top: 0;
+  right: 0;
+}
+
+/* line 146, ../_sass/_challenges.scss */
+.laserpointer-bottomleft {
+  bottom: 0;
+  left: 0;
+}
+
+/* line 150, ../_sass/_challenges.scss */
+.laserpointer-bottomright {
+  bottom: 0;
+  right: 0;
+  background-color: #f3f3f3;
+}
+
+/* line 155, ../_sass/_challenges.scss */
+.laserpointer-point {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  transition: 0.2s all;
+  width: 10px;
+  height: 10px;
+  border-radius: 5px;
+  background-color: red;
+}
+
+/* line 165, ../_sass/_challenges.scss */
+.laserpointer-topleft:hover ~ .laserpointer-point {
+  transform: translateX(120px) translateY(130px);
+}
+
+/* line 168, ../_sass/_challenges.scss */
+.laserpointer-topright:hover ~ .laserpointer-point {
+  transform: translateX(60px) translateY(180px);
+}
+
+/* line 171, ../_sass/_challenges.scss */
+.laserpointer-bottomleft:hover ~ .laserpointer-point {
+  transform: translateX(30px) translateY(30px);
+}
+
+/* line 174, ../_sass/_challenges.scss */
+.laserpointer-bottomright:hover ~ .laserpointer-point {
+  transform: translateX(150px) translateY(30px);
+}
+
 /* line 15, ../_sass/screen.scss */
 *, :before, :after {
   box-sizing: border-box;
