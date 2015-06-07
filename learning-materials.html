@@ -519,7 +519,7 @@ div:hover {
 </style>
 </head>
 <body>
-<div>Hover me! Hover Me!</div>
+<div class="changeonhover">Hover me! Hover Me!</div>
 </body>
     {% endhighlight %}
     <p>Notice how you did not need to define an animation but still the browser animates between the two states? All we did is insert <code>transition: 1s all;</code> which is the transition shorthand with just the first two values that are a <code>transition-duration</code> of 1 second and the <code>transition-property</code> of <code>all</code> which means the browser will animate between all properties that have changed. You could also define different transitions for different properties, separated by a comma. Let’s go a little overboard with that and also use the other transition values:</p>
